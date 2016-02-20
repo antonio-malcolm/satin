@@ -1,0 +1,125 @@
+.notebook {
+	padding: 0;
+	border: 0;
+	border: 1px solid shade(mix(@bg_color, @bg_color_dark, 0.65), 1.25);
+	background-color: shade(mix(@bg_color, @bg_color_dark, 0.65), 1.25);
+	background-image: none;
+	background-clip: border-box;
+	-GtkNotebook-initial-gap: 0;
+	-GtkNotebook-arrow-spacing: 5;
+	-GtkNotebook-tab-curvature: 0;
+	-GtkNotebook-tab-overlap: 1;
+	-GtkNotebook-has-tab-gap: false;
+}
+
+.notebook.header {
+	border-width: 0;
+}
+
+.notebook.header.frame {
+	border-color: @bg_color_dark;
+	background-color: @bg_color_dark;
+}
+
+.notebook.header.frame.top {
+	border-width: 1px 1px 0 1px;
+}
+
+.notebook.header.frame.right {
+	border-width: 1px 1px 1px 0;
+}
+
+.notebook.header.frame.bottom {
+	border-width: 0 1px 1px 1px;
+}
+
+.notebook.header.frame.left {
+	border-width: 1px 0 1px 1px;
+}
+
+.notebook.frame {
+	background-color: @bg_color;
+}
+
+.notebook.top.frame {
+	border-top: 0;
+}
+
+.notebook.right.frame {
+	border-right: 0;
+}
+
+.notebook.bottom.frame {
+	border-bottom: 0;
+}
+
+.notebook.left.frame {
+	border-left: 0;
+}
+
+.notebook tab {
+	padding: 4px 6px;
+	border: 1px solid shade(mix(@bg_color, @bg_color_dark, 0.65), 1.25);
+}
+
+.notebook tab:active,
+.notebook tab:active:hover {
+	background-color: @bg_color;
+	color: @fg_color;
+}
+
+.notebook tab:hover {
+	background-color: shade(mix(@bg_color, @bg_color_dark, 0.65), 1.45);
+}
+
+.notebook tab.top:active {
+	border-bottom-color: transparent;
+}
+
+.notebook tab.right:active {
+	border-left-color: transparent;
+}
+
+.notebook tab.bottom:active {
+	border-top-color: transparent;
+}
+
+.notebook tab.left:active {
+	border-right-color: transparent;
+}
+
+.notebook tab GtkLabel,
+.notebook tab .button {
+	border: 0;
+	padding: 0;
+	background-color: shade(mix(@bg_color, @bg_color_dark, 0.65), 1.25);
+}
+
+.notebook GtkLabel {
+	color: mix(@text_color, @base_color, 0.4);
+}
+
+.notebook .prelight-page,
+.notebook .prelight-page GtkLabel {
+	color: @fg_color;
+}
+
+.notebook .prelight-page,
+.notebook .prelight-page GtkLabel,
+.notebook tab .prelight-page .button {
+	background-color: shade(mix(@bg_color, @bg_color_dark, 0.65), 1.45);
+}
+
+.notebook .active-page,
+.notebook .active-page GtkLabel,
+.notebook tab .active-page,
+.notebook tab .active-page GtkLabel,
+.notebook tab .active-page .button {
+	background-color: @bg_color;
+}
+
+.notebook .active-page,
+.notebook .active-page GtkLabel {
+	border: 0;
+	color: @fg_color_selected;
+}

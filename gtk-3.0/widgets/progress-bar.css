@@ -1,0 +1,60 @@
+/* progress bars */
+
+GtkProgressBar {
+	padding: 0;
+	border: 1px solid shade(@border_color, 0.65);
+	border-radius: 2px;
+	font-size: smaller;
+	color: @highlight_text_color;
+}
+
+.progressbar,
+.progressbar row,
+.progressbar row:hover,
+.progressbar row:selected,
+.progressbar row:selected:focus {
+	margin: 5px 0;
+	background-color: @highlight_color;
+	background-image: linear-gradient(
+		to bottom,
+		shade(@highlight_color, 1.4),
+		shade(@highlight_color, 1.1),
+		@highlight_color
+	);
+}
+
+.progressbar.vertical {
+	background-image: linear-gradient(
+		to right,
+		shade(@highlight_color, 1.4),
+		shade(@highlight_color, 1.1),
+		@highlight_color
+	);
+}
+
+.trough,
+.trough row,
+.trough row:hover,
+.trough row:selected,
+.trough row:selected:focus {
+	border: 1px solid shade(@border_color, 0.65);
+	border-radius: 2px;
+	background-color: shade(@bg_color_dark, 1.5);
+	background-image: linear-gradient(
+		to bottom,
+		@bg_color_dark,
+		shade(@bg_color_dark, 1.25),
+		shade(@bg_color_dark, 1.5),
+		shade(@bg_color_dark, 1.75)
+	);
+}
+
+.trough.vertical {
+	background-image: linear-gradient(
+		to right,
+		@bg_color_dark,
+		shade(@bg_color_dark, 1.25),
+		shade(@bg_color_dark, 1.5),
+		shade(@bg_color_dark, 1.75)
+	);
+}

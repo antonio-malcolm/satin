@@ -1,0 +1,98 @@
+style "separator-menu-item" {}
+
+style "menu" {
+
+	xthickness = 0
+	ythickness = 0
+
+	# Adjust the shade factor if we are using a compositor to apply transparency to our menu, 
+	# else it will appear too light, in comparison to the corresponding active menubar item...
+	bg[NORMAL] = shade(0.45, @menu_bg_color)
+	
+	bg[PRELIGHT] = @menu_bg_color
+	bg[SELECTED] = @menu_bg_color
+	bg[ACTIVE] = @menu_bg_color
+	bg[INSENSITIVE] = @bg_color_dark
+
+	fg[NORMAL] = @text_color_light
+	fg[PRELIGHT] = @text_color_light
+	fg[SELECTED] = @text_color_light
+	fg[ACTIVE] = @text_color_light
+	fg[INSENSITIVE] = shade(0.95, @insensitive_color)
+
+	text[NORMAL] = @text_color_light
+	text[PRELIGHT] = @text_color_light
+	text[SELECTED] = @text_color_light
+	text[ACTIVE] = @text_color_light
+	text[INSENSITIVE] = shade(0.95, @insensitive_color)
+
+	engine "murrine" {}
+
+}
+
+style "menu-item" {
+
+	xthickness = 2
+	ythickness = 3
+
+	bg[PRELIGHT] = @bg_color_dark
+	bg[SELECTED] = @highlight_color
+	bg[ACTIVE] = @highlight_color
+
+	fg[NORMAL] = @text_color_light
+	fg[PRELIGHT] = @text_color_light
+	fg[SELECTED] = @text_color_light
+	fg[ACTIVE] = @text_color_light
+	fg[INSENSITIVE] = shade(0.95, @insensitive_color)
+
+	engine "murrine" {}
+
+}
+
+style "menubar" {
+
+	xthickness = 0
+	ythickness = 0
+
+	bg[NORMAL] = @bg_color_dark
+	bg[PRELIGHT] = @menu_bg_color
+	bg[SELECTED] = @menu_bg_color
+	bg[ACTIVE] = @menu_bg_color
+	bg[INSENSITIVE] = @bg_color_dark
+
+	fg[NORMAL] = @text_color_light
+	fg[PRELIGHT] = @text_color_light
+	fg[SELECTED] = @text_color_light
+	fg[ACTIVE] = @text_color_light
+	fg[INSENSITIVE] = shade(0.95, @insensitive_color)
+
+	engine "murrine" {
+	
+		# Adjust the shade factor if we are using something like compton to apply transparency
+		# to our menus, else it will appear too dark, by contrast...
+		border_shades = { 1.25, 1.35 }
+		
+	}
+
+}
+
+style "menubar-item" {
+
+	xthickness = 2
+	ythickness = 3
+
+	bg[NORMAL] = @bg_color_dark
+	bg[PRELIGHT] = @bg_color_dark
+	bg[SELECTED] = @menu_bg_color
+	bg[ACTIVE] = @bg_color_dark
+	bg[INSENSITIVE] = @bg_color_dark
+
+	fg[NORMAL] = @text_color_light
+	fg[PRELIGHT] = @text_color_light
+	fg[SELECTED] = @text_color_light
+	fg[ACTIVE] = @text_color_light
+	fg[INSENSITIVE] = shade(0.95, @insensitive_color)
+
+	engine "murrine" {}
+
+}

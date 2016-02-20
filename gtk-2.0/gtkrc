@@ -1,0 +1,11 @@
+gtk-icon-sizes = "gtk-menu=17,17:gtk-button=15,15:gtk-notebook=15,15:gtk-small-toolbar=16,16:gtk-large-toolbar=17,17:gtk-dnd=17,17:panel-menu=17,17:panel=17,17:gtk-dialog=17,17"
+gtk-auto-mnemonics = 1
+gtk-primary-button-warps-slider = 1
+
+include "colors.rc"
+include "defaults.rc"
+include "widgets.rc"
+include "menus.rc"
+include "panels.rc"
+include "kupfer.rc"
+include "bindings.rc"

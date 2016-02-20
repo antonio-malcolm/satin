@@ -1,0 +1,108 @@
+class "ChromeGtkFrame" style "chrome-gtk-frame"
+widget_class "*Chrom*Button*" style "chromium-toolbar-button"
+widget_class "*MozContainer*" style "chromium-toolbar-button"
+
+class "GtkWidget" style "default"
+class "GtkWindow" style "window"
+class "GtkFrame" style "frame"
+class "GtkCalendar" style "frame"
+class "GtkCheck*" style "radiocheck"
+class "GtkEntry" style "entry"
+class "GtkHandleBox" style "toolbar"
+class "GtkNotebook" style "notebook"
+class "GtkRadio*" style "radiocheck"
+class "GtkScale" style "scale"
+class "GtkVScale" style "scale"
+class "GtkHScale" style "scale"
+class "GtkScrollbar" style "scrollbar"
+class "GtkVScrollbar" style "scrollbar"
+class "GtkHScrollbar" style "scrollbar"
+class "GtkSeparator" style "frame"
+class "GtkSpinButton" style "spinbutton"
+class "GtkToolbar" style "toolbar"
+
+widget_class "*<GtkButton>" style "button"
+
+widget_class "*<GtkComboBoxEntry>*" style "entry"
+widget_class "*<GtkCombo>*" style "entry"
+
+widget_class "*GtkFileChooserWidget.GtkFileChooserDefault.GtkVBox.GtkHPaned.GtkVBox.GtkScrolledWindow.GtkTreeView*" style "list"
+widget_class "*GtkFileChooserWidget.GtkFileChooserDefault.GtkVBox.GtkHPaned.GtkVBox.GtkScrolledWindow.<GtkTreeView>.<GtkButton>" style "list-header"
+
+widget_class "*.<GtkFrame>.<GtkLabel>" style "frame-title"
+
+widget_class "*<GtkLinkButton>" style "link"
+
+widget_class "*.<GtkList>" style "list"
+widget_class "*.<GtkList>.<GtkButton>" style "list-header"
+widget_class "*.<GtkCList>.<GtkButton>" style "list-header"
+
+widget_class "*<GtkMenu>*" style "menu"
+widget_class "*<GtkMenuItem>*" style "menu-item"
+widget_class "*<GtkSeparatorMenuItem>*" style "separator-menu-item"
+widget_class "*Menu*.*Sepa*" style "separator-menu-item"
+widget_class "*<GtkMenuBar>*" style "menubar"
+widget_class "*<GtkMenuBar>*<GtkMenuItem>*" style "menubar-item"
+
+widget_class "*<GtkNotebook>" style "notebook"
+widget_class "*<GtkNotebook>*<GtkEventBox>" style "notebook-bg"
+widget_class "*<GtkNotebook>*<GtkDrawingArea>" style "notebook-bg"
+widget_class "*<GtkNotebook>*<GtkLayout>" style "notebook-bg"
+widget_class "*.GtkNotebook.*.GtkViewport" style "notebook"
+
+widget_class "*<GtkProgress>" style "progressbar"
+widget_class "*<GtkProgressBar>" style "progressbar"
+
+widget_class "*GtkToolButton*" style "toolbutton"
+widget_class "*GtkToggleToolButton*" style "toolbutton"
+widget_class "*GtkMenuToolButton*" style "toolbutton"
+widget_class "*GtkToolbar*Button" style "toolbutton"
+
+widget_class "*.<GtkTreeView>" style "list"
+widget_class "*.<GtkTreeView>*" style "list"
+widget_class "*.<GtkTreeView>.<GtkButton>" style "list-header"
+widget_class "*.<GtkCTree>.<GtkButton>" style "list-header"
+
+widget_class "*Toolbar*.*Separator*" style "toolbar"
+
+widget "*combobox-popup-menu*" style "combobox-menu"
+widget "*PanelWidget*" style "panel"
+widget "*PanelApplet*" style "panel"
+widget "*fast-user-switch*" style "panel"
+widget "*CPUFreq*Applet*" style "panel"
+widget "*indicator-applet*" style "panel"
+class "PanelApp*" style "panel"
+class "PanelToplevel*" style "panel"
+widget_class "*PanelToplevel*" style "panel"
+widget_class "*notif*" style "tooltips"
+widget_class "*Notif*" style "tooltips"
+widget_class "*Tray*" style "panel" 
+widget_class "*tray*" style "panel"
+widget_class "*computertemp*" style "panel"
+widget_class "*Applet*Tomboy*" style "panel"
+widget_class "*Applet*Netstatus*" style "panel"
+widget "*gdm-user-switch-menubar*" style "panel"
+
+widget "*Panel*MenuBar*" style "menu"
+widget "*gimmie*" style "menu"
+
+widget_class "*.<GtkComboBox>.<GtkCellView>" style "combobox-menu"
+widget_class "*<GtkListItem>*" style "list"
+widget_class "*<GtkCList>" style "list"
+widget_class "*<EelEditableLabel>" style "tooltips"
+
+widget "gtk-tooltip*"	style "tooltips"
+
+widget_class "*<GtkScrolledWindow>*<OsScrollbar>" style "overlay-scrollbar"
+
+## The main window is kupfer
+widget "kupfer" style "kupfer"
+widget "kupfer.*" style "kupfer"
+
+## The result list is kupfer-list
+widget "kupfer-list.*" style "kupfer"
+
+## Additional less used items:
+## The menu button is '*.kupfer-menu-button'
+## The description text is '*.kupfer-description'
+## The context menu is '*.kupfer-menu'

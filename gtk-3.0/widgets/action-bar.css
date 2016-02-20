@@ -1,0 +1,21 @@
+/* action-bar */
+
+.action-bar {
+	border-width: 1px 0 0;
+	border-style: solid;
+	border-color: shade(@bg_color_dark, 0.85);
+	padding: 2px;
+	background-color: @bg_color_dark;
+	background-image: none;
+	color: @text_color_light;
+}
+
+.action-bar .title {
+	padding: 8px;
+	font: bold;
+}
+
+.action-bar .subtitle {
+	padding: 8px;
+	font: smaller;
+}

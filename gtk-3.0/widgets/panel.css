@@ -1,0 +1,15 @@
+.panel {
+	padding: 5px;
+	border: 0;
+	background-color: @header_color;
+	background-image: linear-gradient(
+		to bottom,
+		@header_color,
+		@bg_color_dark
+	);
+	box-shadow: none;
+	font-weight: bold;
+	color: @text_color_light;
+	text-shadow: 2px 2px 2px @bg_color_dark;
+	icon-shadow: 2px 2px 2px @bg_color_dark;
+}

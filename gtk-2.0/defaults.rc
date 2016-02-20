@@ -1,0 +1,135 @@
+style "default" {
+
+	xthickness = 1
+	ythickness = 1
+
+	GtkArrow::arrow-scaling = 0.6
+	
+	GtkButton::default-border = {0,0,0,0}
+	GtkButton::default-outside-border = {0,0,0,0}
+	GtkButton::child-displacement-x = 0
+	GtkButton::child-displacement-y = 0
+	
+	GtkButtonBox::child-min-height = 16
+	
+	GtkCheckButton::indicator-size = 16
+	
+	GtkComboBox::arrow-size = 16
+	
+	GtkEntry::has-frame = FALSE
+	GtkEntry::shadow-type = GTK_SHADOW_IN
+	
+	GtkHTML::link-color = @link_color
+	GtkIMHtmlr::hyperlink-color = @link_color
+	GtkIMHtml::hyperlink-color = @link_color
+	
+	GtkLabel::shadow_type = GTK_SHADOW_NONE
+	
+	GtkMenu::horizontal-padding = 0
+	GtkMenu::vertical-padding = 2
+	
+	GtkMenuBar::internal-padding = 1
+	GtkMenuBar::shadow-type = GTK_SHADOW_NONE
+	
+	GtkPaned::handle-size = 3
+	
+	GtkProgressBar::min-horizontal-bar-height = 10
+	GtkProgressBar::min-vertical-bar-width = 10
+	
+	GtkRange::trough-border = 0
+	GtkRange::slider-width = 16
+	GtkRange::stepper-size = 16
+	GtkRange::stepper_spacing = 0
+	GtkRange::trough-under-steppers = 1
+	
+	GtkScale::slider-width = 16
+	GtkScale::slider-length = 16
+	GtkScale::trough-side-details = 1
+	
+	GtkScrollbar::activate-slider = 1
+	GtkScrollbar::has-backward-stepper = 0
+	GtkScrollbar::has-forward-stepper = 0
+	GtkScrollbar::has-secondary-backward-stepper = 0
+	GtkScrollbar::has-secondary-forward-stepper = 0
+	GtkScrollbar::min-slider-length = 60
+	GtkScrollbar::slider-width = 11
+	GtkScrollbar::trough-border = 0
+	
+	GtkScrolledWindow::scrollbar-spacing = 1
+	GtkScrolledWindow::scrollbars-within-bevel = 1
+	
+	GtkToolbar::internal-padding = 2
+	GtkToolbar::shadow-type = GTK_SHADOW_NONE
+	
+	GtkTreeView::expander-size = 8
+	GtkTreeView::odd_row_color = shade(1.785, @highlight_color)
+	GtkTreeView::even_row_color = @bg_color
+	GtkTreeView::vertical-separator = 2
+	
+	GtkWidget::focus-padding = 0
+	GtkWidget::link-color = @link_color
+	GtkWidget::visited-link-color = shade(1.55, @link_color)
+	GtkWidget::separator-width = 2
+	GtkWidget::separator-height = 2
+	GtkWidget::wide-separators = 1
+	GtkWidget::tooltip-radius = 0
+	GtkWidget::tooltip-alpha = 255
+
+	GtkWindow::resize-grip-width = 0
+	GtkWindow::resize-grip-height = 0
+
+	base[NORMAL] = @base_color
+	base[PRELIGHT] = @base_color
+	base[SELECTED] = @highlight_color
+	base[ACTIVE] = @highlight_color
+	base[INSENSITIVE] = shade(1.085, @insensitive_color)
+	
+	bg[NORMAL] = @window_color
+	bg[PRELIGHT] = @bg_color
+	bg[SELECTED] = @highlight_color
+	bg[ACTIVE] = @highlight_color
+	bg[INSENSITIVE] = shade(1.085, @insensitive_color)
+	
+	fg[NORMAL] = @fg_color
+	fg[PRELIGHT] = shade(0.75, @fg_color)
+	fg[SELECTED] = @highlight_text_color
+	fg[ACTIVE] = @fg_color
+	fg[INSENSITIVE] = shade(0.75, @insensitive_color)
+
+	text[NORMAL] = @text_color
+	text[PRELIGHT] = shade(0.75, @text_color)
+	text[SELECTED] = @highlight_text_color
+	text[ACTIVE] = @fg_color
+	text[INSENSITIVE] = shade(0.75, @insensitive_color)
+	
+	engine "murrine" {
+		animation = TRUE
+		arrowstyle = 2 # 0 = normal arrows, 1 = filled arrows
+		border_shades = { 1.0, 1.0 } # gradient to draw on border
+		colorize_scrollbar = FALSE
+		comboboxstyle = 0 # 0 = normal combobox, 1 = colorized combobox button
+		contrast = 0.8 # overal contrast with borders
+		focusstyle = 0 # 0 = none, 1 = grey dotted, 2 = colored with fill, 3 = colored glow
+		glazestyle = 0 # 0 = flat highlight, 1 = curved highlight, 2 = concave, 3 = top curved highlight, 4 = beryl highlight
+		glowstyle = 0 # 0 = glow on top, 1 = glow on bottom, 2 = glow on top and bottom, 3 = glow on middle vertically, 4 = glow on middle horizontally, 5 = glow on all sides
+		glow_shade = 1.0 # amount of glow
+		gradient_shades = { 1.0, 1.0, 1.0, 1.0 } # gradient to draw on widgets
+		highlight_shade = 1.0 # amount of highlight
+		lightborder_shade = 1.0 # amount of inset light border
+		lightborderstyle = 1 # 0 = lightborder on top side, 1 = lightborder on all sides
+		listviewheaderstyle = 0 # 0 = flat, 1 = glassy, 2 = raised
+		listviewstyle = 0 # 0 = none, 1 = dotted, 2 = line
+		menubaritemstyle = 0 # 0 = menuitem look, 1 = button look
+		menubarstyle = 0 # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
+		menuitemstyle = 0 # 0 = flat, 1 = glassy, 2 = striped
+		menustyle = 0 # 0 = none, 1 = vertical striped
+		progressbarstyle = 0 # 0 = none, 1 = diagonal striped, 2 = vertical striped
+		reliefstyle = 1 # 0 = flat, 1 = inset, 2 = shadow, 3 = shadow with gradient, 4 = stronger shadow with gradient
+		roundness = 2 # roundness of widgets
+		scrollbarstyle = 2 # 0 = none, 1 = circles, 2 = handles, 3 = diagonal stripes, 4 = diagonal stripes and handles, 5 = horizontal stripes, 6 = horizontal stripes and handles
+		sliderstyle = 0 # 0 = none, 1 = handles
+		stepperstyle = 1 # 0 = standard, 1 = integrated stepper handles
+		toolbarstyle = 0 # 0 = flat, 1 = glassy, 2 = gradient
+	}
+
+}

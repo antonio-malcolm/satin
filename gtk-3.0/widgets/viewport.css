@@ -1,0 +1,22 @@
+/* viewport */
+
+GtkViewport.frame {
+	border: none;
+}
+
+.view {
+	background-color: @bg_color;
+	color: @text_color;
+}
+
+.view:insensitive,
+.view:insensitive:insensitive {
+	background-color: @insensitive_color;
+	color: shade(@insensitive_color, 0.75);
+}
+
+.view:selected,
+.view:selected:focus {
+	background-color: @highlight_color;
+	color: @bg_color;
+}

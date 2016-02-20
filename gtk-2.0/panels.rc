@@ -1,0 +1,42 @@
+style "panel" {
+
+	xthickness = 2
+
+	bg[PRELIGHT] = @header_bg_color
+	bg[SELECTED] = @header_bg_color
+	bg[ACTIVE] = @header_bg_color
+	bg[INSENSITIVE] = shade(1.065, @insensitive_color)
+
+	base[PRELIGHT] = @header_bg_color
+	base[SELECTED] = @header_bg_color
+	base[ACTIVE] = @header_bg_color
+	base[INSENSITIVE] = shade(1.065, @insensitive_color)
+	
+	fg[NORMAL] = @text_color_light
+	fg[PRELIGHT] = @text_color_light
+	fg[SELECTED] = @text_color_light
+	fg[ACTIVE] = @text_color_light
+	fg[INSENSITIVE] = @insensitive_color
+
+	text[NORMAL] = @text_color_light
+	text[PRELIGHT] = @text_color_light
+	text[SELECTED] = @text_color_light
+	text[ACTIVE] = @text_color_light
+	text[INSENSITIVE] = @insensitive_color
+
+	engine "murrine" {
+		border_shades = { 1.085, 1.085 }
+		gradient_shades = { 1.0, 0.85, 0.8, 0.75 }
+	}
+	
+}
+
+style "bold-panel-item" {
+
+	font_name = "Bold"
+
+	engine "murrine" {
+		roundness = 0
+	}
+	
+}

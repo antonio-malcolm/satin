@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=satin
+Comment=A GTK+ and Openbox theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=satin
+MetacityTheme=satin
+ButtonLayout=:minimize,maximize,close

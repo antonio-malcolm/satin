@@ -1,0 +1,23 @@
+/* infobar */
+
+.info, 
+.question {
+	border: 1px solid shade (@highlight_color, 1.05);
+	background-color: @highlight_color;
+	background-image: none;
+	color: @highlight_text_color;
+}
+
+.warning {
+	border: 1px solid shade (@warning_color, 1.05);
+	background-color: @warning_color;
+	background-image: none;
+	color: @highlight_text_color;
+}
+
+.error {
+	border: 1px solid shade (@error_color, 1.05);
+	background-color: @error_color;
+	background-image: none;
+	color: @highlight_text_color;
+}

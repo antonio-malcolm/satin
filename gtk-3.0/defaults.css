@@ -1,0 +1,164 @@
+* {
+	-GtkArrow-arrow-scaling: 1.0;
+	
+	-GtkButton-child-displacement-x: 0;
+	-GtkButton-child-displacement-y: 0;
+	-GtkButton-default-border: 0;
+	-GtkButton-image-spacing: 0;
+	-GtkButton-inner-border: 1;
+	-GtkButton-interior-focus: true;
+	
+	-GtkButtonBox-child-min-height: 18;
+	-GtkButtonBox-child-internal-pad-x: 2;
+	-GtkButtonBox-child-internal-pad-y: 2;
+	
+	-GtkCheckButton-indicator-size: 16;
+	-GtkCheckMenuItem-indicator-size: 14;
+	
+	-GtkExpander-expander-size: 8;
+	
+	-GtkHTML-link-color: @link_color;
+	-GtkIMHtml-hyperlink-color: @link_color;
+	
+	-GtkMenu-horizontal-padding: 0;
+	-GtkMenu-vertical-padding: 0;
+	
+	-GtkPaned-handle-size: 3;
+	
+	-GtkProgressBar-min-horizontal-bar-height: 16;
+	-GtkProgressBar-min-vertical-bar-width: 16;
+	
+	-GtkRange-slider-width: 12;
+	-GtkRange-stepper-size: 12;
+	-GtkRange-stepper-spacing: 0;
+	-GtkRange-trough-border: 0;
+	-GtkRange-trough-under-steppers: 1;
+	
+	-GtkScrollbar-has-backward-stepper: false;
+	-GtkScrollbar-has-forward-stepper: false;
+	-GtkScrollbar-min-slider-length: 60;
+	-GtkScrollbar-slider-width: 8;
+	-GtkScrollbar-trough-border: 0;
+	
+	-GtkScrolledWindow-scrollbar-spacing: 1;
+	-GtkScrolledWindow-scrollbars-within-bevel: 1;
+	
+	-GtkTextView-error-underline-color: @error_color;
+	
+	-GtkToolButton-icon-spacing: 6;
+	-GtkToolItemGroup-expander-size: 8;
+	
+	-GtkTreeView-expander-size: 8;
+	-GtkTreeView-vertical-separator: 0;
+	
+	-GtkWidget-link-color: @link_color;
+	-GtkWidget-visited-link-color: shade(@link_color, 1.55);
+	
+	-GtkWidget-wide-separators: true;
+	-GtkWidget-horizontal-separator: 1;
+	-GtkWidget-vertical-separator: 1;
+	-GtkWidget-separator-width: 1;
+	-GtkWidget-separator-height: 0;
+	
+	-GtkWidget-focus-line-width: 1;
+  -GtkWidget-focus-padding: 0;
+	
+	-GtkWindow-resize-grip-width: 0;
+	-GtkWindow-resize-grip-height: 0;
+
+	background-clip: padding-box;
+	border-radius: 0;
+	
+}
+
+.background {
+	background-color: @window_color;
+	background-image: linear-gradient(
+		to bottom,
+		@window_color,
+		shade(@window_color, 1.01),
+		shade(@window_color, 1.025),
+		shade(@window_color, 1.05),
+		shade(@window_color, 1.075)
+	);
+	color: @fg_color;
+}
+
+.background:backdrop {
+	text-shadow: none;
+	icon-shadow: none;
+}
+
+*:selected,
+*:selected:focus {
+	background-color: @highlight_color;
+	color: @highlight_text_color;
+}
+
+*:insensitive,
+*:insensitive:insensitive {
+	-gtk-image-effect: dim;
+	color: shade(@insensitive_color, 0.75);
+}
+
+*:hover {
+  -gtk-image-effect: highlight;
+}
+
+*:link, 
+*:link:hover, 
+*:link:visited {
+	color: @link_color;
+	background-color: transparent;
+	background-image: none;
+}
+
+*:link:visited,
+*:visited {
+	color: shade(@link_color, 1.55);
+}
+
+.gtkstyle-fallback {
+	background-color: @bg_color;
+	color: @fg_color;
+}
+
+.gtkstyle-fallback:prelight {
+	background-color: shade(@bg_color, 1.1);
+	color: @fg_color;
+}
+
+.gtkstyle-fallback:active {
+	background-color: shade(@bg_color, 0.9);
+	color: @fg_color;
+}
+
+.gtkstyle-fallback:insensitive {
+	background-color: @insensitive_color;
+	color: shade(@insensitive_color, 0.75);
+}
+
+.gtkstyle-fallback:selected {
+	background-color: @highlight_color;
+	color: @highlight_text_color;
+}
+
+GtkDrawingArea,
+GtkDrawingArea:insensitive {
+  background-color: transparent;
+}
+
+GtkImage,
+GtkImage:insensitive,
+GtkLabel,
+GtkBox,
+GtkBox:insensitive,
+GtkGrid,
+GtkGrid:insensitive {
+	background-color: transparent;
+}
+
+GtkLabel:insensitive {
+	color: shade(@insensitive_color, 0.75);
+}
+	

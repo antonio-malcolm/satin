@@ -1,0 +1,301 @@
+style "button" {
+
+	xthickness = 4
+	ythickness = 4
+
+	bg[NORMAL] = shade(1.5, @border_color)
+	bg[PRELIGHT] = shade(1.215, @border_color)
+	bg[ACTIVE] = shade(0.95, @border_color)
+	bg[INSENSITIVE] = shade(1.065, @insensitive_color)
+
+	engine "murrine" {
+		gradient_shades = { 1.1, 0.95, 0.95, 0.81 }
+	}
+
+}
+
+style "combobox-menu" {
+	bg[NORMAL] = @bg_color_dark
+}
+
+style "entry" {
+
+	xthickness = 4
+	ythickness = 4
+	
+	bg[NORMAL] = shade(1.25, @border_color)
+	bg[PRELIGHT] = shade(1.25, @border_color)
+	bg[ACTIVE] = shade(1.25, @border_color)
+	bg[INSENSITIVE] = shade(1.25, @insensitive_color)
+
+	fg[INSENSITIVE] = @insensitive_color
+	
+	text[INSENSITIVE] = shade(0.95, @insensitive_color)
+
+	engine "murrine" {}
+	
+}
+
+style "frame" {
+	xthickness = 2
+	ythickness = 2
+}
+
+style "frame-title" {
+	engine "murrine" {}
+}
+
+style "link" {
+
+	xthickness = 0
+	ythickness = 0
+
+	bg[ACTIVE] = @link_color
+
+	engine "murrine" {}
+
+}
+
+style "list" {
+
+  fg[NORMAL] = @fg_color
+  fg[PRELIGHT] = @fg_color
+	fg[ACTIVE] = @highlight_text_color
+	fg[SELECTED] = @highlight_text_color
+	fg[INSENSITIVE] = @highlight_text_color
+ 
+  text[NORMAL] = @fg_color
+  text[PRELIGHT] = @fg_color
+	text[ACTIVE] = @highlight_text_color
+	text[SELECTED] = @highlight_text_color
+	text[INSENSITIVE] = @highlight_text_color
+
+	engine "murrine" {
+		border_shades = { 1.25, 1.25 }
+	}
+
+}
+
+style "list-header" {
+	
+	bg[NORMAL] = @border_color
+	bg[PRELIGHT] = shade(0.925, @border_color)
+	bg[ACTIVE] = shade(0.925, @border_color)
+	
+	fg[NORMAL] = @fg_color
+	fg[PRELIGHT] = @highlight_text_color
+	fg[ACTIVE] = @highlight_text_color
+
+	engine "murrine" {}
+
+}
+
+style "notebook-bg" {
+
+	bg[PRELIGHT] = @bg_color
+	bg[SELECTED] = @bg_color
+	bg[ACTIVE] = @bg_color
+	bg[INSENSITIVE] = @insensitive_color
+	
+	engine "murrine" {}
+	
+}
+
+style "notebook" {
+
+	xthickness = 3
+	ythickness = 1
+
+  bg[NORMAL] = shade(1.085, @window_color)
+	bg[PRELIGHT] = shade(1.125, @border_color)
+	bg[SELECTED] = shade(1.125, @border_color)
+	bg[ACTIVE] = shade(1.05, @border_color)
+
+	engine "murrine" {}
+	
+}
+
+style "overlay-scrollbar" {
+
+  bg[NORMAL] = @bg_color_dark
+  bg[PRELIGHT] = @bg_color_dark
+	bg[ACTIVE] = @bg_color_dark
+	bg[SELECTED] = @bg_color_dark
+	bg[INSENSITIVE] = @bg_color_dark
+
+  base[NORMAL] = @bg_color_dark
+  base[PRELIGHT] = @bg_color_dark
+	base[ACTIVE] = @bg_color_dark
+	base[SELECTED] = @bg_color_dark
+	base[INSENSITIVE] = @bg_color_dark
+	
+	engine "murrine" {}
+	
+}
+
+style "progressbar" {
+
+	bg[NORMAL] = @bg_color_dark
+	bg[ACTIVE] = @bg_color_dark
+	bg[SELECTED] = @highlight_color
+
+	fg[NORMAL] = @highlight_text_color
+	fg[PRELIGHT] = @highlight_text_color
+
+	engine "murrine" {
+		trough_shades = { 1.2, 1.85 }
+		trough_border_shades = { 1.5, 1.5 }
+		border_shades = { 1.2, 1.2 }
+		gradient_shades = { 1.4, 1.1, 1.1, 1.0 }
+	}
+	
+}
+
+style "radiocheck" {
+
+	bg[PRELIGHT] = @bg_color
+	bg[SELECTED] = @bg_color
+
+	text[NORMAL] = @link_color
+	text[PRELIGHT] = @link_color
+	
+	engine "murrine" {}
+	
+}
+
+style "scale" {
+
+	bg[NORMAL] = shade(1.115, @border_color)
+	bg[PRELIGHT] = shade(1.035, @border_color)
+	bg[ACTIVE] = @bg_color_dark
+	bg[INSENSITIVE] = @insensitive_color
+	bg[SELECTED] = @highlight_color
+	
+	fg[INSENSITIVE] = shade(1.25, @insensitive_color)
+
+	engine "murrine" {
+		roundness = 8
+		trough_shades = { 1.2, 1.85 }
+		trough_border_shades = { 1.5, 1.5 }
+		gradient_shades = { 1.4, 1.1, 1.1, 1.0 }
+	}
+
+}
+
+style "scrollbar" {
+
+	bg[NORMAL] = shade(2.65, @bg_color_dark)
+	bg[PRELIGHT] = shade(2.25, @bg_color_dark)
+	bg[ACTIVE] = shade(1.25, @highlight_color)
+
+	engine "murrine" {
+		border_shades = { 1.085, 1.085 }
+		trough_shades = { 0.65, 1.025 }
+		trough_border_shades = { 1.175, 1.175 }
+		gradient_shades = { 1.0, 0.925, 0.9, 0.7 }
+	}
+	
+}
+
+style "spinbutton" {
+
+	engine "murrine" {
+		gradient_shades = { 1.1, 0.95, 0.95, 0.81 }
+	}
+	
+}
+
+style "toolbar" {
+
+	bg[PRELIGHT] = @bg_color
+	bg[SELECTED] = @bg_color
+	bg[ACTIVE] = @bg_color
+	bg[INSENSITIVE] = @window_color
+
+	fg[PRELIGHT] = @fg_color
+	fg[SELECTED] = @fg_color
+	fg[ACTIVE] = @fg_color
+
+	engine "murrine" {}
+	
+}
+
+style "toolbutton" {
+
+	xthickness = 2
+	ythickness = 3
+
+	bg[PRELIGHT] = @bg_color
+	bg[SELECTED] = @bg_color
+	bg[ACTIVE] = @bg_color
+	bg[INSENSITIVE] = @window_color
+
+	fg[PRELIGHT] = @fg_color
+	fg[ACTIVE] = @fg_color
+
+	engine "murrine" {
+		border_shades = { 1.075, 1.075 }
+		gradient_shades = { 0.75, 0.915, 0.925, 0.97}
+	}
+	
+}
+
+style "tooltips" {
+
+	xthickness = 4
+	ythickness = 4
+
+	base[NORMAL] = @bg_color_dark
+	
+	bg[NORMAL] = @bg_color_dark
+	bg[SELECTED] = @bg_color_dark
+	
+	fg[NORMAL] = @text_color_light
+	
+	engine "murrine" {
+	  textstyle = 0
+	}
+	
+}
+
+style "window" {
+  
+  base[NORMAL] = @window_color
+	base[SELECTED] = @window_color
+
+	bg[NORMAL] = @window_color
+	bg[SELECTED] = @window_color
+	
+	engine "murrine" {
+		gradient_shades = { 1.0, 1.2, 1.3, 1.5 }
+	}
+	
+}
+
+style "chromium-toolbar-button" = "button" {
+
+	engine "murrine" {
+		textstyle = 0
+	}
+	
+}
+
+style "chrome-gtk-frame" {
+
+	ChromeGtkFrame::frame-color = @bg_color_dark
+	ChromeGtkFrame::inactive-frame-color = @bg_color_dark
+
+	ChromeGtkFrame::frame-gradient-size = 0
+	ChromeGtkFrame::frame-gradient-color = @bg_color_dark
+
+	ChromeGtkFrame::incognito-frame-color = @bg_color_dark
+	ChromeGtkFrame::incognito-inactive-frame-color = @bg_color_dark
+
+	ChromeGtkFrame::incognito-frame-gradient-size = 0
+	ChromeGtkFrame::incognito-frame-gradient-color = @bg_color_dark
+
+	ChromeGtkFrame::scrollbar-trough-color = shade(3.333, @bg_color_dark)
+	ChromeGtkFrame::scrollbar-slider-normal-color = shade(2.5, @bg_color_dark)
+	ChromeGtkFrame::scrollbar-slider-prelight-color = @highlight_color
+	
+}

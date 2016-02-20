@@ -1,0 +1,33 @@
+/* checkboxes and radios */
+
+.check,
+.check row,
+.radio,
+.radio row {
+	border: 1px solid shade(@border_color, 0.75);
+	border-radius: 2px;
+	background-color: @bg_color;
+	background-image: linear-gradient(
+		to bottom,
+		#4a4948,
+		shade(#4a4948, 1.25),
+		shade(#4a4948, 1.5),
+		shade(#4a4948, 1.75)
+	);
+}
+
+.check:checked,
+.radio:checked {
+	box-shadow: inset 0 1px 2px 1px shade(@bg_color_dark, 1.5);	
+	background-color: @bg_color;
+	background-image: none;
+	color: @link_color;
+}
+
+.check:insensitive,
+.radio:insensitive {
+	border-color: shade(@insensitive_color, 0.85);
+	background-color: shade(@insensitive_color, 1.15);
+	background-image: none;
+	color: @insensitive_color;
+}

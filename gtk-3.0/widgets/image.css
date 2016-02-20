@@ -1,0 +1,24 @@
+/* images */
+
+.image {
+	color: alpha(currentColor, 0.5);
+}
+
+.image:hover {
+	color: alpha(currentColor, 0.9);
+}
+
+.image:selected,
+.image:selected:hover {
+	color: @highlight_text_color;
+}
+
+.view.image,
+.view.image:hover {
+	color: alpha(currentColor, 0.9);
+}
+
+.view.image:selected,
+.view.image:selected:hover {
+	color: @highlight_text_color;
+}

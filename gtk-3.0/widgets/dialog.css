@@ -1,0 +1,10 @@
+/* dialogs */
+
+GtkMessageDialog,
+.prompt {
+	-GtkDialog-content-area-border: 0;
+	-GtkDialog-action-area-border: 0;
+	-GtkDialog-button-spacing: 0;
+	margin: 0;
+	padding: 0;
+}

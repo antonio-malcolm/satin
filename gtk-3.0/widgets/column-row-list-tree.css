@@ -1,0 +1,87 @@
+/* lists */
+
+.list {
+	background-color: @bg_color;
+}
+
+.list-row {
+	border: none;
+	padding: 3px;
+	background-color: @bg_color;
+}
+
+.list-row:hover,
+.list-row:selected,
+row:selected,
+row:selected:hover,
+row:selected:focus,
+.cell:selected,
+.cell:selected:focus {
+	background-color: @highlight_color;
+	color: @bg_color;
+}
+
+
+/* cells and rows*/
+
+.cell {
+	border: none;
+	background-color: @bg_color;
+}
+
+row:selected,
+row:selected:hover,
+row:selected:focus {
+	-GtkWidget-focus-padding: 1;
+	-GtkWidget-focus-line-width: 0;
+	border: none;
+}
+
+
+/* column headers */
+
+column-header .button,
+column-header .button:active,
+column-header .button:checked {
+	border-width: 0 1px 1px 0;
+}
+
+column-header .button {
+	border-color: shade(@border_color, 1.05);
+	border-radius: 0;
+	background-color: @border_color;
+	background-image: none;
+	color: @fg_color;
+}
+
+column-header .button:active,
+column-header .button:checked,
+column-header .button:focus,
+column-header .button:active:focus,
+column-header .button:active:hover,
+column-header .button:active:hover:focus,
+column-header .button:checked:focus,
+column-header .button:checked:hover,
+column-header .button:checked:hover:focus,
+column-header .button:hover,
+column-header .button:hover:focus {
+	background-color: shade(@border_color, 0.925);
+	background-image: none;
+	color: @highlight_text_color;
+}
+
+column-header:last-child .button {
+	border-width: 0 0 1px 0;
+}
+
+
+/* trees */
+
+GtkTreeView {
+	-GtkTreeView-vertical-separator: 0;
+  outline-offset: -1px;
+}
+
+GtkTreeView.dnd {
+  border: 1px solid @border_color;
+}

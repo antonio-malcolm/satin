@@ -1,0 +1,11 @@
+/* tooltips */
+
+.tooltip {
+	background-color: @bg_color_dark;
+	background-image: none;
+	color: @bg_color;
+}
+
+.tooltip * {
+	background-color: transparent;
+}

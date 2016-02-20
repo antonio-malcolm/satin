@@ -1,0 +1,131 @@
+# Name: Voidbang Openbox Theme
+# Author: Antonio Malcolm
+# Version: 2015.04.01
+# License: GPL-3.0+
+
+
+# Common
+
+border.width: 0
+padding.width: 5
+padding.height: 5
+
+
+# Fonts
+
+menu.items.font:shadow=n
+menu.title.text.font:shadow=n
+
+
+# Menu
+
+menu.border.color: #4a4948
+menu.border.width: 0
+
+menu.title.bg: flat solid
+menu.title.bg.color: #4a4948
+menu.title.bg.shadow: 0
+menu.title.text.color: #eeebeb
+menu.title.text.font: shadow=y:shadowtint=20:shadowoffset=2
+menu.title.text.justify: center
+
+menu.items.bg: flat solid
+menu.items.bg.color: #4a4948
+menu.items.text.color: #eeebeb
+menu.items.disabled.text.color: #aaaaaa
+
+menu.items.active.bg: flat solid
+menu.items.active.bg.color: #4a99cb
+menu.items.active.text.color: #eeebeb
+
+menu.separator.color: #4a4948
+menu.separator.width: 0
+menu.separator.padding.width: 0
+menu.separator.padding.height: 0
+
+
+# OSD
+
+osd.border.width: 0
+
+osd.bg: flat gradient vertical
+osd.bg.color: #5d5c5a
+osd.bg.colorTo: #4a4948
+osd.bg.shadow: 0
+
+osd.label.text.color: #eeebeb
+
+osd.hilight.bg: flat solid
+osd.hilight.bg.color: #4a99cb
+
+
+# Windows (common)
+
+window.handle.width: 2
+window.client.padding.width: 0
+window.label.text.justify: left
+
+
+# Windows (active)
+
+window.active.title.bg: flat gradient vertical
+window.active.title.bg.color: #5d5c5a
+window.active.title.bg.colorTo: #4a4948
+window.active.title.bg.shadow: 0
+window.active.title.separator.color: #4a4948
+
+window.active.label.bg: parentrelative
+window.active.label.text.color: #eeebeb
+window.active.label.text.font: shadow=y:shadowtint=20:shadowoffset=2
+
+window.active.handle.bg: flat gradient vertical
+window.active.handle.bg.color: #5d5c5a
+window.active.handle.bg.colorTo: #4a4948
+
+window.active.grip.bg: flat gradient vertical
+window.active.grip.bg.color: #5d5c5a
+window.active.grip.bg.colorTo: #4a4948
+
+window.active.button.unpressed.bg: parentrelative
+window.active.button.unpressed.image.color: #eeebeb
+
+window.active.button.pressed.bg: flat gradient vertical
+window.active.button.pressed.bg.color: #5d5c5a
+window.active.button.pressed.bg.colorTo: #4a4948
+window.active.button.pressed.image.color: #eeebeb
+
+window.active.button.disabled.bg: parentrelative
+window.active.button.disabled.image.color: #aaaaaa
+
+window.active.button.toggled.bg: parentrelative
+window.active.button.toggled.image.color: #eeebeb
+
+
+# Windows (inactive)
+
+window.inactive.title.bg: flat solid
+window.inactive.title.bg.color: #6d6c6a
+window.inactive.title.bg.shadow: 0
+window.inactive.title.separator.color: #6d6c6a
+
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #c1c1c1
+window.inactive.label.text.font: shadow=n
+
+window.inactive.handle.bg: flat solid
+window.inactive.handle.bg.color: #6d6c6a
+
+window.inactive.grip.bg: flat solid
+window.inactive.grip.bg.color: #6d6c6a
+
+window.inactive.button.unpressed.bg: parentrelative
+window.inactive.button.unpressed.image.color: #c1c1c1
+
+window.inactive.button.pressed.bg: parentrelative
+window.inactive.button.pressed.image.color: #6d6c6a
+
+window.inactive.button.disabled.bg: parentrelative
+window.inactive.button.disabled.image.color: #aaaaaa
+
+window.inactive.button.toggled.bg: parentrelative
+window.inactive.button.toggled.image.color: #6d6c6a

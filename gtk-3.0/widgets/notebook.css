@@ -1,0 +1,150 @@
+.notebook {
+	padding: 0;
+	border: 0;
+	border: 1px solid shade(@border_color, 0.95);
+	border-radius: 2px;
+	background-color: shade(@border_color, 1.05);
+	background-image: none;
+	background-clip: border-box;
+	-GtkNotebook-initial-gap: 0;
+	-GtkNotebook-arrow-spacing: 5;
+	-GtkNotebook-tab-curvature: 0;
+	-GtkNotebook-tab-overlap: 1;
+	-GtkNotebook-has-tab-gap: false;
+}
+
+.notebook GtkViewport {
+  border-width: 0;
+  background-color: @bg_color;
+  color: @fg_color;
+}
+
+.notebook.header.frame {
+	border-color: shade(@border_color, 0.95);
+	background-color: shade(@border_color, 1.05)
+}
+
+.notebook.header.frame.top {
+	border-bottom: 0;
+	border-radius: 2px 2px 0 0;
+}
+
+.notebook.header.frame.right {
+	border-left: 0;
+	border-radius: 0 2px 2px 0;
+}
+
+.notebook.header.frame.bottom {
+	border-top: 0;
+	border-radius: 0 0 2px 2px;
+}
+
+.notebook.header.frame.left {
+	border-right: 0;
+	border-radius: 2px 0 0 2px;
+}
+
+.notebook.frame {
+	background-color: @bg_color;
+}
+
+.notebook.top.frame {
+	border-top: 0;
+	border-radius: 2px 2px 0 0;
+}
+
+.notebook.right.frame {
+	border-right: 0;
+	border-radius: 0 2px 2px 0;
+}
+
+.notebook.bottom.frame {
+	border-bottom: 0;
+	border-radius: 0 0 2px 2px;
+}
+
+.notebook.left.frame {
+	border-left: 0;
+	border-radius: 2px 0 0 2px;
+}
+
+.notebook tab,
+.notebook tab.reorderable-page {
+	border: 1px solid shade(@border_color, 0.95);
+	border-radius: 0;
+	padding: 4px 2px 2px;
+	background-color: transparent;
+	background-image: none;
+	color: shade(@fg_color, 0.75);
+}
+
+.notebook tab.top:active {
+	border-bottom: 0;
+	border-radius: 2px 2px 0 0;
+}
+
+.notebook tab.right:active {
+	border-left: 0;
+	border-radius: 0 2px 2px 0;
+}
+
+.notebook tab.bottom:active {
+	border-top: 0;
+	border-radius: 0 0 2px 2px;
+}
+
+.notebook tab.left:active {
+	border-right: 0;
+	border-radius: 2px 0 0 2px;
+}
+
+.notebook .active-page,
+.notebook tab,
+.notebook tab:active,
+.notebook tab:hover,
+.notebook tab .prelight-page,
+.notebook tab .active-page,
+.notebook tab.reorderable-page {
+  transition: all 175ms ease-in;
+}
+
+.notebook tab:hover,
+.notebook tab .prelight-page,
+.notebook tab.reorderable-page:hover {
+	background-color: shade(@border_color, 1.125);
+	color: @fg_color;
+}
+
+.notebook tab:active,
+.notebook tab:active:hover,
+.notebook tab .active-page.prelight-page,
+.notebook tab .active-page:hover,
+.notebook tab.reorderable-page:active,
+.notebook tab.reorderable-page:active:hover {
+	background-color: @bg_color;
+	color: @fg_color;
+}
+
+.notebook tab.reorderable-page:hover {
+  border-left: 0;
+  border-right: 0;
+}
+
+.notebook tab.reorderable-page:active {
+  border-left: 0;
+  border-right: 0;
+}
+
+.notebook tab .active-page,
+.notebook tab GtkLabel,
+.notebook tab .button,
+.notebook tab .button:active,
+.notebook tab .button:checked,
+.notebook tab .button:active:hover,
+.notebook tab .button:checked:hover {
+	border: 0;
+	padding: 0;
+	background-color: transparent;
+	background-image: none;
+	color: shade(@fg_color, 1.75);
+}

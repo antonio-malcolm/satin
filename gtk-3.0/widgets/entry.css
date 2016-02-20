@@ -1,0 +1,42 @@
+/* entry */
+
+.entry,
+.entry:prelight {
+	padding: 5px 5px 3px;
+	border: 1px solid shade(@border_color, 0.85);
+	border-radius: 2px;
+	background-color: @unfocused_color;
+	background-image: none;
+	box-shadow: inset 0 0 2px 1px shade(@border_color, 1.1);
+	color: @text_color;
+	transition: all 175ms ease-out;
+}
+
+.entry:active,
+.entry:active:focus,
+.entry:focus,
+.entry:hover,
+.entry:selected,
+.entry:selected:focus {
+	background: @bg_color;
+	box-shadow: inset 0 0 2px 1px shade(@border_color, 1.15);
+}
+
+.entry:insensitive {
+	border: 1px solid shade(@insensitive_color, 0.95);
+	background-color: @insensitive_color;
+	box-shadow: none;
+	color: shade(@insensitive_color, 0.75);
+}
+
+.entry.progressbar {
+	border: 1px solid shade(@border_color, 0.65);
+	border-radius: 2px;
+	background-color: @fg_grad_start;
+	background-image: linear-gradient(
+		to bottom,
+		shade(@fg_grad_start, 1.4),
+		shade(@fg_grad_start, 1.1),
+		@fg_grad_start
+	);
+}

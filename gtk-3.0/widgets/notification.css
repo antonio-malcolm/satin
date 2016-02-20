@@ -1,0 +1,8 @@
+/* notifications */
+
+.app-notification {
+	border: none;
+	padding: 10px;
+	background-color: @bg-color-dark;
+	color: @bg_color
+}

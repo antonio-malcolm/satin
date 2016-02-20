@@ -1,0 +1,126 @@
+/* progress bars */
+
+GtkProgressBar {
+	padding: 0;
+	border: 1px solid shade(@border_color, 0.65);
+	border-radius: 2px;
+	font-size: smaller;
+	color: @highlight_text_color;
+}
+
+.progressbar,
+.progressbar row,
+.progressbar row:hover,
+.progressbar row:selected,
+.progressbar row:selected:focus {
+	margin: 5px 0;
+	background-color: @highlight_color;
+	background-image: linear-gradient(
+		to bottom,
+		shade(@highlight_color, 1.4),
+		shade(@highlight_color, 1.1),
+		@highlight_color
+	);
+}
+
+.progressbar.vertical {
+	background-image: linear-gradient(
+		to right,
+		shade(@highlight_color, 1.4),
+		shade(@highlight_color, 1.1),
+		@highlight_color
+	);
+}
+
+.trough,
+.trough row,
+.trough row:hover,
+.trough row:selected,
+.trough row:selected:focus {
+	border: 1px solid shade(@border_color, 0.65);
+	border-radius: 2px;
+	background-color: shade(@bg_color_dark, 1.5);
+	background-image: linear-gradient(
+		to bottom,
+		@bg_color_dark,
+		shade(@bg_color_dark, 1.25),
+		shade(@bg_color_dark, 1.5),
+		shade(@bg_color_dark, 1.75)
+	);
+}
+
+.trough.vertical {
+	background-image: linear-gradient(
+		to right,
+		@bg_color_dark,
+		shade(@bg_color_dark, 1.25),
+		shade(@bg_color_dark, 1.5),
+		shade(@bg_color_dark, 1.75)
+	);
+}
+
+GtkLevelBar {
+	-GtkLevelBar-min-block-width: 34;
+	-GtkLevelBar-min-block-height: 3;
+}
+
+GtkLevelBar.vertical {
+	-GtkLevelBar-min-block-width: 3;
+	-GtkLevelBar-min-block-height: 34;
+}
+
+.level-bar.trough {
+	border: 1px solid shade(@border_color, 0.55);
+	padding: 1px;
+}
+
+.level-bar.fill-block {
+	border: 1px solid @highlight_color;
+	border-radius: 2px;
+	padding: 2px;
+	background-color: @highlight_color;
+	background-image: linear-gradient(
+		to bottom,
+		shade(@highlight_color, 1.4),
+		shade(@highlight_color, 1.1),
+		@highlight_color
+	);
+}
+
+.level-bar.indicator-continuous.fill-block {
+	padding: 2px;
+}
+
+.level-bar.indicator-discrete.fill-block.horizontal {
+	margin: 0 1px;
+}
+
+.level-bar.indicator-discrete.fill-block.vertical {
+	margin: 1px 0;
+}
+
+.level-bar.fill-block.level-high {
+	border-color: shade(@success_color, 0.85);
+	background-image: linear-gradient(
+		to bottom,
+		shade(@success_color, 1.75),
+		shade(@success_color, 1.45),
+		shade(@success_color, 1.25)
+	);
+}
+
+.level-bar.fill-block.level-low {
+	border-color: shade(@warning_color, 0.85);
+	background-image: linear-gradient(
+		to bottom,
+		shade(@warning_color, 1.75),
+		shade(@warning_color, 1.45),
+		shade(@warning_color, 1.25)
+	);
+}
+
+.level-bar.fill-block.empty-fill-block {
+	border-color: transparent;
+	background-color: transparent;
+	background-image: none;
+}

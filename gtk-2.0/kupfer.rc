@@ -1,0 +1,46 @@
+style "kupfer" {
+
+  # Main Window
+  KupferWindow::corner-radius = 0
+  KupferWindow::opacity = 84
+  KupferWindow::decorated = 0
+  KupferWindow::border-width = 12
+
+  # Selected Item in Main Window
+  MatchView::corner-radius = 8
+  MatchView::opacity = 100
+
+  # Search List
+  Search::list-opacity = 84
+  Search::list-length = 200
+  
+	GtkTreeView::even_row_color = @bg_color_dark
+
+  # bg: background color
+  bg[NORMAL] = @bg_color_dark
+  bg[SELECTED] = @highlight_color
+  bg[ACTIVE] = @bg_color_dark
+  bg[PRELIGHT] = @bg_color_dark
+  bg[INSENSITIVE] = @bg_color_dark
+
+  # fg: foreground text color
+  fg[NORMAL] = @text_color_light
+  fg[SELECTED] = @highlight_text_color
+  fg[ACTIVE] = @highlight_text_color
+  fg[PRELIGHT] = @highlight_text_color
+  fg[INSENSITIVE] = shade(0.95, @insensitive_color)
+
+  # text: text color in input widget and treeview
+  text[NORMAL] = @text_color_light
+  text[SELECTED] = @highlight_text_color
+  text[ACTIVE] = @highlight_text_color
+  text[INSENSITIVE] = shade(0.95, @insensitive_color)
+
+  # base: background color in input widget and treeview
+  base[NORMAL] = @bg_color_dark
+  base[SELECTED] = @bg_color_dark
+  base[ACTIVE] = @highlight_color
+  base[PRELIGHT] = @bg_color_dark
+  base[INSENSITIVE] = @bg_color_dark
+
+}

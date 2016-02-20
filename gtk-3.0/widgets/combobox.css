@@ -1,0 +1,21 @@
+/* combobox */
+
+GtkComboBox.combobox-entry .entry {
+	padding: 4px 4px 3px;
+}
+
+.primary-toolbar GtkComboBox.combobox-entry .entry,
+GtkComboBox.combobox-entry .entry {
+  border-width: 1px 0 1px 1px;
+  border-radius: 2px 0 0 2px;
+}
+
+GtkComboBox .button {
+	padding: 4px;
+}
+
+.primary-toolbar GtkComboBox.combobox-entry .button,
+GtkComboBox.combobox-entry .button {
+	border-width: 1px 1px 1px 0;
+	border-radius: 0 2px 2px 0;
+}
