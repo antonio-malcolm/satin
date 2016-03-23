@@ -58,10 +58,16 @@ widget_class "*GtkToggleToolButton*" style "toolbutton"
 widget_class "*GtkMenuToolButton*" style "toolbutton"
 widget_class "*GtkToolbar*Button" style "toolbutton"
 
+widget_class "*.<GtkScrolledWindow>*<GtkTreeView>*" style "list-header"
+
 widget_class "*.<GtkTreeView>" style "list"
 widget_class "*.<GtkTreeView>*" style "list"
 widget_class "*.<GtkTreeView>.<GtkButton>" style "list-header"
+widget_class "*.<GtkTreeView>.<GtkButton>.*<GtkLabel>" style "list-header"
 widget_class "*.<GtkCTree>.<GtkButton>" style "list-header"
+widget_class "*.<GtkCTree>.<GtkButton>.*<GtkLabel>" style "list-header"
+widget_class "*.<GtkList>.<GtkButton>.*<GtkLabel>" style "list-header"
+widget_class "*.<GtkCList>.<GtkButton>.*<GtkLabel>" style "list-header"
 
 widget_class "*Toolbar*.*Separator*" style "toolbar"
 
@@ -74,8 +80,8 @@ widget "*indicator-applet*" style "panel"
 class "PanelApp*" style "panel"
 class "PanelToplevel*" style "panel"
 widget_class "*PanelToplevel*" style "panel"
-widget_class "*notif*" style "tooltips"
-widget_class "*Notif*" style "tooltips"
+widget_class "*notif*" style "tooltip"
+widget_class "*Notif*" style "tooltip"
 widget_class "*Tray*" style "panel" 
 widget_class "*tray*" style "panel"
 widget_class "*computertemp*" style "panel"
@@ -89,10 +95,11 @@ widget "*gimmie*" style "menu"
 widget_class "*.<GtkComboBox>.<GtkCellView>" style "combobox-menu"
 widget_class "*<GtkListItem>*" style "list"
 widget_class "*<GtkCList>" style "list"
-widget_class "*<EelEditableLabel>" style "tooltips"
+widget_class "*<EelEditableLabel>" style "tooltip"
 
-widget "gtk-tooltip*"	style "tooltips"
+widget "gtk-tooltip*"	style "tooltip"
 
+widget_class "*<GtkScrolledWindow>*" style "scrolledwindow"
 widget_class "*<GtkScrolledWindow>*<OsScrollbar>" style "overlay-scrollbar"
 
 ## The main window is kupfer

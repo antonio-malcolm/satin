@@ -17,7 +17,9 @@ style "default" {
 	GtkComboBox::arrow-size = 16
 	
 	GtkEntry::has-frame = FALSE
+	GtkEntry::honors-transparent-bg-hint = 1
 	GtkEntry::shadow-type = GTK_SHADOW_IN
+	GtkEntry::state-hint = 0
 	
 	GtkHTML::link-color = @link_color
 	GtkIMHtmlr::hyperlink-color = @link_color
@@ -62,8 +64,7 @@ style "default" {
 	GtkToolbar::shadow-type = GTK_SHADOW_NONE
 	
 	GtkTreeView::expander-size = 8
-	GtkTreeView::odd_row_color = shade(1.785, @highlight_color)
-	GtkTreeView::even_row_color = @bg_color
+	GtkTreeView::odd_row_color = shade(1.75, @highlight_color)
 	GtkTreeView::vertical-separator = 2
 	
 	GtkWidget::focus-padding = 0

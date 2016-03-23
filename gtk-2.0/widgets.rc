@@ -197,6 +197,14 @@ style "scrollbar" {
 	
 }
 
+style "scrolledwindow" {
+	
+	engine "murrine" {
+		contrast = 0.6
+	}
+
+}
+
 style "spinbutton" {
 
 	engine "murrine" {
@@ -240,7 +248,7 @@ style "toolbutton" {
 	
 }
 
-style "tooltips" {
+style "tooltip" {
 
 	xthickness = 4
 	ythickness = 4
