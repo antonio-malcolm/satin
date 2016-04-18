@@ -1,0 +1,22 @@
+/* viewport */
+
+viewport.frame {
+	border: none;
+}
+
+.view {
+	background-color: @bg_color;
+	color: @text_color;
+}
+
+.view:disabled,
+.view:disabled:disabled {
+	background-color: @disabled_color;
+	color: shade(@disabled_color, 0.75);
+}
+
+.view:selected,
+.view:selected:focus {
+	background-color: @highlight_color;
+	color: @bg_color;
+}

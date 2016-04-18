@@ -1,0 +1,36 @@
+/* trough */
+
+trough {
+	border-radius: 2px;
+	background-color: shade(@bg_color_dark, 1.5);
+	background-image: linear-gradient(
+		to bottom,
+		@bg_color_dark,
+		shade(@bg_color_dark, 1.25),
+		shade(@bg_color_dark, 1.5),
+		shade(@bg_color_dark, 1.75)
+	);
+}
+
+
+trough.left,
+trough.right {
+	background-image: linear-gradient(
+		to bottom,
+		@bg_color_dark,
+		shade(@bg_color_dark, 1.25),
+		shade(@bg_color_dark, 1.5),
+		shade(@bg_color_dark, 1.75)
+	);
+}
+
+trough.top,
+trough.bottom {
+	background-image: linear-gradient(
+		to right,
+		@bg_color_dark,
+		shade(@bg_color_dark, 1.25),
+		shade(@bg_color_dark, 1.5),
+		shade(@bg_color_dark, 1.75)
+	);
+}

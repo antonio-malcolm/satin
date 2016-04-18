@@ -1,0 +1,21 @@
+/* actionbar */
+
+actionbar {
+	border-width: 1px 0 0;
+	border-style: solid;
+	border-color: shade(@bg_color_dark, 0.85);
+	padding: 2px;
+	background-color: @bg_color_dark;
+	background-image: none;
+	color: @text_color_light;
+}
+
+actionbar .title {
+	padding: 8px;
+	font: bold;
+}
+
+actionbar .subtitle {
+	padding: 8px;
+	font: smaller;
+}

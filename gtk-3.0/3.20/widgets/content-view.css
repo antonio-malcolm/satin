@@ -1,0 +1,44 @@
+/* content view */
+
+.content-view.subtitle {
+  font: smaller;
+  padding: 0 12px;
+}
+
+.content-view.view {
+  background-color: @bg_color;
+}
+
+.content-view.view:prelight,
+.content-view.view:selected,
+.content-view.view:active {
+  background-color: @highlight_color;
+}
+
+.content-view.view:disabled {
+  background-color: @disabled_color;
+  color: shade(@disabled_color, 0.75);
+}
+
+GdMainIconView.content-view {
+  -GdMainIconView-icon-size: 40;
+}
+
+iconview.content-view.check {
+  background-color: transparent;
+}
+
+iconview.content-view.check:active {
+  background-color: transparent;
+}
+
+.content-view.view.check,
+.content-view.view.check:active {
+  background-color: transparent;
+}
+
+iconview.content-view.check:prelight,
+iconview.content-view.check:disabled,
+iconview.content-view.check:selected {
+  background-color: transparent;
+}

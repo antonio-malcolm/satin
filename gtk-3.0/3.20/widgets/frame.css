@@ -1,0 +1,12 @@
+/* frames */
+
+frame > border,
+.frame {
+	border: 1px solid @border_color;
+	padding: 0;
+	background: transparent;
+}
+
+.frame.flat { 
+	border: 0;
+}

@@ -1,0 +1,19 @@
+/* bubble windows */
+
+bubblewindow {
+	border-radius: 2px;
+	background-clip: border-box;
+}
+
+bubblewindow.osd.background {
+	background-color: @header_color;
+	background-image: linear-gradient(
+		to bottom,
+		@header_color,
+		@bg_color_dark
+	);
+}
+
+bubblewindow .toolbar {
+	background: transparent;
+}

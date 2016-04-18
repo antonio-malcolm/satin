@@ -1,0 +1,44 @@
+/* osd */
+
+.background.osd {
+	border-radius: 2px;
+	background-color: @header_color;
+	background-image: linear-gradient(
+		to bottom,
+		@header_color,
+		@bg_color_dark
+	);
+  color: @text_color_light;
+}
+
+GtkOverlay.osd {
+	background: transparent;
+}
+
+osd.frame {
+	background-clip: border-box;
+	background-origin: border-box;
+}
+
+.osd.toolbar {
+	background: transparent;
+	-GtkToolbar-button-relief: normal;
+	padding: 4px;
+}
+
+.osd.toolbar .button:first-child {
+	border-width: 1px 0 1px 1px;
+}
+
+.osd.toolbar .button:last-child {
+	border-width: 1px 1px 1px 0;
+}
+
+.osd .page-thumbnail {
+	border: 1px solid shade(@bg_color_dark, 0.95);
+	border-radius: 2px;
+	padding: 1px;
+  background-color: @bg_color;
+	background-image: none;
+	box-shadow: 0 1px 3px 1px shade(@bg_color_dark, 0.275);
+}

@@ -18,6 +18,7 @@ style "default" {
 	
 	GtkEntry::has-frame = FALSE
 	GtkEntry::honors-transparent-bg-hint = 1
+	GtkEntry::inner-border = { 5, 2, 2, 2}
 	GtkEntry::shadow-type = GTK_SHADOW_IN
 	GtkEntry::state-hint = 0
 	

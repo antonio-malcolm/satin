@@ -1,0 +1,28 @@
+/* defaults */
+
+@define-color base_color #fefefe;
+@define-color bg_color #fefefe;
+@define-color bg_color_dark #4a4948;
+@define-color fg_color #3c3c3c;
+@define-color header_color #5d5c5a;
+@define-color window_color #e1e1e1;
+@define-color border_color #dbdbdb;
+@define-color highlight_color #4a99cb;
+@define-color highlight_text_color #fefefe;
+@define-color disabled_color #d1d2d2;
+@define-color link_color #4a99cb;
+@define-color text_color #2a2a2a;
+@define-color text_color_light #eeebeb;
+@define-color unfocused_color #fcfcfe;
+
+
+/* menus */
+
+@define-color menu_bg_color #3e3d3c;
+
+
+/* status */
+
+@define-color success_color #10964d;
+@define-color warning_color #cf6227;
+@define-color error_color #d21d09;

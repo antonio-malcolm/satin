@@ -1,0 +1,167 @@
+/* scrollbars */
+
+scrollbar,
+.scrollbar {
+	border: 1px solid @border_color;
+	border-radius: 0;
+	padding: 0;
+	background-color: transparent;
+}
+
+scrollbar trough,
+.scrollbar trough,
+.scrollbars-junction {
+	border: 0;
+	border-radius: 0;
+	background-color: shade(@bg_color_dark, 2.45);
+}
+
+scrollbar trough {
+	background-image: linear-gradient(
+		to bottom,
+		shade(@bg_color_dark, 2.0),
+		shade(@bg_color_dark, 2.5),
+		shade(@bg_color_dark, 2.65),
+		shade(@bg_color_dark, 2.95),
+		shade(@bg_color_dark, 3.0)
+	);
+}
+
+scrollbar.vertical trough {
+	background-image: linear-gradient(
+		to right,
+		shade(@bg_color_dark, 2.0),
+		shade(@bg_color_dark, 2.5),
+		shade(@bg_color_dark, 2.65),
+		shade(@bg_color_dark, 2.95),
+		shade(@bg_color_dark, 3.0)
+	);
+}
+
+scrollbar button,
+scrollbar button:active,
+scrollbar button:checked,
+scrollbar button:active:hover,
+scrollbar button:checked:hover {
+	border-color: shade(@border_color, 1.05);
+	background-color: @highlight_color;
+	color: shade(@bg_color_dark, 1.5);
+}
+
+scrollbar slider {
+	border: 1px solid shade(@bg_color_dark, 1.75);
+	border-radius: 2px;
+	background-color: shade(@bg_color_dark, 2.15);
+	background-image: linear-gradient(
+		to bottom,
+		shade(@bg_color_dark, 2.65),
+		shade(@bg_color_dark, 2.15),
+		shade(@bg_color_dark, 1.75),
+		shade(@bg_color_dark, 1.45)
+	);
+}
+
+scrollbar.vertical slider {
+	background-image: linear-gradient(
+		to right,
+		shade(@bg_color_dark, 2.65),
+		shade(@bg_color_dark, 2.15),
+		shade(@bg_color_dark, 1.75),
+		shade(@bg_color_dark, 1.45)
+	);
+}
+
+scrollbar slider:hover {
+	background-image: linear-gradient(
+		to bottom,
+		shade(@bg_color_dark, 2.35),
+		shade(@bg_color_dark, 1.85),
+		shade(@bg_color_dark, 1.65),
+		shade(@bg_color_dark, 1.35)
+	);
+}
+
+scrollbar.vertical slider:hover {
+	background-image: linear-gradient(
+		to right,
+		shade(@bg_color_dark, 2.35),
+		shade(@bg_color_dark, 1.85),
+		shade(@bg_color_dark, 1.65),
+		shade(@bg_color_dark, 1.35)
+	);
+}
+
+scrollbar slider:active {
+	border-color: shade(@highlight_color, 0.85);
+	background-color: @highlight_color;
+	background-image: linear-gradient(
+		to bottom,
+		shade(@highlight_color, 1.1),
+		shade(@highlight_color, 0.95),
+		shade(@highlight_color, 0.85),
+		shade(@highlight_color, 0.7)
+	);
+}
+
+scrollbar.vertical slider:active {
+	background-image: linear-gradient(
+		to right,
+		shade(@highlight_color, 1.1),
+		shade(@highlight_color, 0.95),
+		shade(@highlight_color, 0.85),
+		shade(@highlight_color, 0.7)
+	);
+}
+
+scrollbar.fine-tune slider:prelight:active {
+	border-color: @highlight_color;
+	background-image: linear-gradient(
+		to bottom,
+		shade(@highlight_color, 1.5),
+		shade(@highlight_color, 1.25),
+		shade(@highlight_color, 0.95),
+		shade(@highlight_color, 0.75)
+	);
+}
+
+scrollbar.vertical.fine-tune slider:prelight:active {
+	background-image: linear-gradient(
+		to right,
+		shade(@highlight_color, 1.5),
+		shade(@highlight_color, 1.25),
+		shade(@highlight_color, 0.95),
+		shade(@highlight_color, 0.75)
+	);
+}
+
+/* scrollbar overlays */
+
+sc {
+	color: shade(@border_color, 0.7);
+}
+
+scrollbar.overlay-thumb:selected,
+scrollbar.overlay-indicator:selected {
+	background-color: @highlight_color;
+}
+
+scrollbar.overlay-thumb:active,
+scrollbar.overlay-indicator:active {
+	background-color: @highlight_color;
+}
+
+scrollbar.overlay-thumb:disabled,
+scrollbar.overlay-indicator:disabled {
+	background-color: shade(@disabled_color, 0.9);
+}
+
+
+/* scrolled windows */
+
+scrolledwindow.frame {
+	border: 1px solid shade(@border_color, 0.8);
+}
+
+scrolledwindow viewport.frame {
+	border-style: none;
+}

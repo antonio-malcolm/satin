@@ -1,0 +1,116 @@
+/* separators */
+
+paned > separator {
+  background-image: linear-gradient(
+  	to left bottom, 
+  	shade(@border_color, 1.05), 
+  	shade(@border_color, 1.05) 1px, 
+  	shade(@border_color, 1.05) 1px, 
+  	shade(@border_color, 1.05) 4px, 
+  	shade(@border_color, 1.05) 4px
+  );
+  background-size: 30% 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+separator,
+.separator,
+.view.separator,
+.view > separator,
+.sidebar > separator,
+.sidebar.view separator,
+.sidebar .view separator,
+.sidebar.separator,
+.sidebar.view.separator,
+.sidebar .view.separator {
+	border-color: shade(@border_color, 1.25);
+	color: shade(@border_color, 1.25);
+}
+
+button separator,
+button .separator,
+button.separator {
+	border-color: shade(@border_color, 1.25);
+}
+
+button separator:disabled,
+button .separator:disabled,
+button.separator:disabled {
+	border-color: shade(@disabled_color, 0.85);
+}
+
+.primary-toolbar separatortoolitem,
+.primary-toolbar separator,
+.primary-toolbar .separator,
+.toolbar separatortoolitem,
+.toolbar > separator
+.toolbar .separator {
+	-GtkWidget-window-dragging: true;
+	border: 0;
+	color: shade(@border_color, 1.25);
+}
+
+headerbar separatortoolitem,
+headerbar > separator,
+headerbar .separator,
+.titlebar separatortoolitem,
+.titlebar > separator,
+.titlebar .separator {
+	-GtkWidget-window-dragging: true;
+	border-color: shade(@border_color, 1.25);
+	color: shade(@border_color, 1.25);
+}
+
+.primary-toolbar separator:disabled,
+.primary-toolbar .separator:disabled,
+.toolbar > separator:disabled,
+.toolbar .separator:disabled,
+headerbar > separator:disabled,
+headerbar .separator:disabled,
+.titlebar > separator:disabled,
+.titlebar .separator:disabled {
+	border-color: shade(@disabled_color, 0.85);
+	color: @disabled_color;
+}
+
+headerbar button separator,
+headerbar button .separator,
+headerbar button.separator,
+.titlebar button separator,
+.titlebar button .separator,
+.titlebar button.separator,
+.primary-toolbar button separator,
+.primary-toolbar button .separator,
+.primary-toolbar button.separator,
+.toolbar button separator,
+.toolbar button .separator,
+.toolbar button.separator {
+	border-color: shade(@border_color, 1.25);
+}
+
+headerbar button separator:disabled,
+headerbar button .separator:disabled,
+headerbar button.separator:disabled,
+.titlebar button separator:disabled,
+.titlebar button .separator:disabled,
+.titlebar button.separator:disabled,
+.primary-toolbar button separator:disabled,
+.primary-toolbar button .separator:disabled,
+.primary-toolbar button.separator:disabled,
+.toolbar button separator:disabled,
+.toolbar button .separator:disabled,
+.toolbar button.separator:disabled {
+	border-color: shade(@disabled_color, 0.85);
+}
+
+.menuitem > separator {
+	-GtkMenuItem-horizontal-padding: 0;
+	border: 0;
+	color: shade(@border_color, 1.25);
+}
+
+combobox separator,
+combobox .separator {
+	border: 0;
+}

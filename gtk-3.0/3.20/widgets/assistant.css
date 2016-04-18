@@ -1,0 +1,15 @@
+/* assistant */
+
+assistant .sidebar .highlight {
+	font: bold;
+}
+
+assistant .sidebar {
+	padding: 4px;
+	border-width: 0 1px 0 0;
+	border-style: solid;
+	border-right-color: shade(@border_color, 1.25);
+	border-radius: 0;
+	background-color: @bg_color;
+	color: shade(@fg_color, 1.15);
+}

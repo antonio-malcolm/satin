@@ -1,0 +1,88 @@
+/* lists */
+
+list {
+	background-color: @bg_color;
+}
+
+list row {
+	border: none;
+	padding: 3px;
+	background-color: @bg_color;
+}
+
+list row:hover,
+list row:selected,
+row:selected,
+row:selected:hover,
+row:selected:focus,
+cell:selected,
+cell:selected:focus {
+	background-color: @highlight_color;
+	color: @bg_color;
+}
+
+
+/* cells and rows*/
+
+cell {
+	border: none;
+	background-color: @bg_color;
+}
+
+row:selected,
+row:selected:hover,
+row:selected:focus {
+	-GtkWidget-focus-padding: 1;
+	-GtkWidget-focus-line-width: 0;
+	border: none;
+}
+
+
+/* column headers */
+
+treeview.view header button,
+treeview.view header button:active,
+treeview.view header button:checked {
+	border-width: 0 1px 1px 0;
+}
+
+treeview.view header button {
+	border-color: shade(@border_color, 1.05);
+	border-radius: 0;
+	margin: 0 0 2px;
+	background-color: @border_color;
+	background-image: none;
+	color: @fg_color;
+}
+
+treeview.view header button:active,
+treeview.view header button:checked,
+treeview.view header button:focus,
+treeview.view header button:active:focus,
+treeview.view header button:active:hover,
+treeview.view header button:active:hover:focus,
+treeview.view header button:checked:focus,
+treeview.view header button:checked:hover,
+treeview.view header button:checked:hover:focus,
+treeview.view header button:hover,
+treeview.view header button:hover:focus {
+	background-color: shade(@border_color, 0.925);
+	background-image: none;
+	color: @highlight_text_color;
+}
+
+treeview.view header:last-child button {
+	border-width: 0 0 1px 0;
+}
+
+
+/* trees */
+
+treeview {
+	-GtkTreeView-vertical-separator: 0;
+  outline-offset: -1px;
+}
+
+treeview button.dnd {
+  border: 1px solid @border_color;
+}

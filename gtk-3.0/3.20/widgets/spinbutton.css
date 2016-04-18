@@ -1,0 +1,25 @@
+/* spinbuttons */
+
+spinbutton:disabled {
+	color: shade(@disabled_color, 0.75);
+}
+
+spinbutton:not(.vertical) > entry {
+	border-right: 0;
+	border-radius: 2px 0 0 2px;
+}
+
+spinbutton:not(.vertical) > entry + button {
+	border-left: 0;
+	border-right: 0;
+	border-radius: 0;
+}
+
+spinbutton:not(.vertical) > entry + button + button {
+	border-radius: 0 2px 2px 0;
+}
+
+
+spinbutton.vertical button:first-child {
+	border-bottom: 1px solid shade(@border_color, 0.5);
+}

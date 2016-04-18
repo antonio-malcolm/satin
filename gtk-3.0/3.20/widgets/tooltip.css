@@ -1,0 +1,16 @@
+/* tooltips */
+
+tooltip.background {
+	background-color: @bg_color_dark;
+	background-image: none;
+	background-clip: padding-box;
+}
+
+tooltip.background label {
+	padding: 0 1px;
+}
+
+tooltip * {
+	background-color: transparent;
+	color: @bg_color;
+}

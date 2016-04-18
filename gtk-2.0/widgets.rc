@@ -10,6 +10,7 @@ style "button" {
 
 	engine "murrine" {
 		gradient_shades = { 1.1, 0.95, 0.95, 0.81 }
+		border_shades = { 0.95, 0.95 }
 	}
 
 }
@@ -32,7 +33,9 @@ style "entry" {
 	
 	text[INSENSITIVE] = shade(0.95, @insensitive_color)
 
-	engine "murrine" {}
+	engine "murrine" {
+		border_shades = { 1.05, 1.05 }
+	}
 	
 }
 

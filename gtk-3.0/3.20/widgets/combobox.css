@@ -1,0 +1,31 @@
+/* combobox */
+
+combobox button {
+	padding: 4px 4px 2px;
+}
+
+combobox entry {
+	border-right: none;
+	border-radius: 2px 0 0 2px;
+	padding: 6px 6px 4px;
+}
+
+combobox entry,
+.primary-toolbar combobox entry {
+  border-width: 1px 0 1px 1px;
+  border-radius: 2px 0 0 2px;
+}
+
+combobox arrow {
+	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+	min-width: 12px;
+	min-height: 12px;
+}
+
+combobox entry + button,
+.primary-toolbar combobox entry + button {
+	min-width: 0;
+	border-width: 1px 1px 1px 0;
+	border-radius: 0 2px 2px 0;
+	padding: 0 8px;
+}

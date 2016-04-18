@@ -1,0 +1,33 @@
+/* titlebars */
+
+.titlebar, 
+.titlebar:backdrop {
+	padding: 4px;
+	border: none;
+	border-radius: 0;
+	background-color: @header_color;
+	background-image: linear-gradient(
+		to bottom,
+		@header_color,
+		@bg_color_dark
+	);
+	font: bold;
+	color: @text_color_light;
+	text-shadow: 2px 2px 2px @bg_color_dark;
+	icon-shadow: 2px 2px 2px @bg_color_dark;
+}
+
+.titlebar.default-decoration {
+	border: none;
+	box-shadow: none;
+}
+
+.titlebar .titlebutton,
+.titlebar .titlebutton:hover,
+.titlebar .titlebutton:hover:focus,
+.titlebar .titlebutton:active:hover,
+.titlebar .titlebutton:active:hover:focus,
+.titlebar .titlebutton:checked:hover,
+.titlebar .titlebutton:checked:hover:focus {
+	padding: 4px;
+}

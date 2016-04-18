@@ -1,0 +1,209 @@
+notebook {
+	padding: 0;
+}
+
+notebook.frame {
+	border: 1px solid @border_color;
+	background: @border_color;
+}
+
+notebook.frame > header {
+	margin: -1px;
+}
+
+notebook.frame > header.top,
+notebook.frame > header.bottom {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+notebook.frame > header.right,
+notebook.frame > header.left {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+notebook > stack:not(:only-child) {
+	background: @bg_color;
+}
+
+notebook > header {
+	background: shade(@window_color, 1.05);
+}
+
+notebook > header > tabs > tab {
+	min-width: 20px;
+	min-height: 18px;
+	border: 1px solid transparent;
+	padding: 4px 6px 2px;
+	background-color: transparent;
+	outline-offset: -4px;
+	transition: all 150ms ease-in;
+}
+
+notebook > header.top > tabs > tab {
+	padding-bottom: 0;
+}
+
+notebook > header.top > tabs > tab label {
+	border-bottom: 2px solid transparent;
+}
+
+notebook > header.bottom > tabs > tab {
+	padding-top: 0;
+}
+
+notebook > header.bottom > tabs > tab label {
+	border-top: 2px solid transparent;
+	padding-top: 2px;
+}
+
+notebook > header.left > tabs > tab {
+	padding-right: 0;
+}
+
+notebook > header.left > tabs > tab label {
+	border-right: 2px solid transparent;
+	padding-right: 4px;
+}
+
+notebook > header.right > tabs > tab {
+	padding-left: 0;
+}
+
+notebook > header.right > tabs > tab label {
+	border-left: 2px solid transparent;
+	padding-left: 4px;
+}
+
+notebook > header.top > tabs > tab,
+notebook > header.top > tabs > tab:not(:checked):hover {
+	border-bottom: 1px solid @border_color;
+}
+
+notebook > header.bottom > tabs > tab,
+notebook > header.bottom > tabs > tab:not(:checked):hover {
+	border-top: 1px solid @border_color;
+}
+
+notebook > header.left > tabs > tab,
+notebook > header.left > tabs > tab:not(:checked):hover {
+	border-right: 1px solid @border_color;
+}
+
+notebook > header.right > tabs > tab,
+notebook > header.right > tabs > tab:not(:checked):hover {
+	border-left: 1px solid @border_color;
+}
+
+notebook > header.top > tabs > tab:hover,
+notebook > header.top > tabs > tab:checked {
+	border-radius: 2px 2px 0 0;
+}
+
+notebook > header.bottom > tabs > tab:hover,
+notebook > header.bottom > tabs > tab:checked {
+	border-radius: 0 0 2px 2px;
+}
+
+notebook > header.left > tabs > tab:hover,
+notebook > header.left > tabs > tab:checked {
+	border-radius: 2px 0 0 2px;
+}
+
+notebook > header.right > tabs > tab:hover,
+notebook > header.right > tabs > tab:checked {
+	border-radius: 0 2px 2px 0;
+}
+
+notebook > header > tabs > tab:hover {
+	background-color: shade(@border_color, 1.25);
+}
+
+notebook > header > tabs > tab:checked {
+	border: 1px solid @border_color;
+	background-color: @bg_color;
+}
+
+notebook > header.top > tabs > tab:checked {
+	border-bottom: 1px solid @bg_color;
+}
+
+notebook > header.top > tabs > tab:checked label {
+	border-bottom: 2px solid @highlight_color;
+}
+
+notebook > header.bottom > tabs > tab:checked {
+	border-top: 1px solid @bg_color;
+}
+
+notebook > header.bottom > tabs > tab:checked label {
+	border-top: 2px solid @highlight_color;
+}
+
+notebook > header.left > tabs > tab:checked {
+	border-right: 1px solid @bg_color;
+}
+
+notebook > header.left > tabs > tab:checked label {
+	border-right: 2px solid @highlight_color;
+}
+
+notebook > header.right > tabs > tab:checked {
+	border-left: 1px solid @bg_color;
+}
+
+notebook > header.right > tabs > tab:checked label {
+	border-left: 2px solid @highlight_color;
+}
+
+notebook > header.top > tabs > tab + tab,
+notebook > header.bottom > tabs > tab + tab {
+	margin-left: -1px;
+}
+
+notebook > header.left > tabs > tab + tab,
+notebook > header.right > tabs > tab + tab {
+	margin-top: -1px;
+}
+
+notebook > header.top > tabs > arrow.up,
+notebook > header.bottom > tabs > arrow.up {
+	-gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+}
+
+notebook > header.top > tabs > arrow.up:last-child,
+notebook > header.bottom > tabs > arrow.up:last-child {
+	margin-left: 2px;
+}
+
+notebook > header.top > tabs > arrow.down,
+notebook > header.bottom > tabs > arrow.down {
+	-gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
+}
+
+notebook > header.top > tabs > arrow.down:last-child,
+notebook > header.bottom > tabs > arrow.down:last-child {
+	margin-right: 2px;
+}
+
+notebook > header.left > tabs > arrow.up,
+notebook > header.right > tabs > arrow.up {
+	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+}
+
+notebook > header.left > tabs > arrow.up:last-child,
+notebook > header.right > tabs > arrow.up:last-child {
+	margin-top: 2px;
+}
+
+notebook > header.left > tabs > arrow.down,
+notebook > header.right > tabs > arrow.down {
+	-gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
+}
+
+notebook > header.left > tabs > arrow.down:last-child,
+notebook > header.right > tabs > arrow.down:last-child {
+	margin-bottom: 2px;
+}
+

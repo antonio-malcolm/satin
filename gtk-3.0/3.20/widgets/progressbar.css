@@ -1,0 +1,37 @@
+/* progress bars */
+
+progressbar {
+	padding: 0;
+	border-radius: 2px;
+	margin: 0 0 5px;
+	font-size: 85%;
+	color: @highlight_text_color;
+}
+
+progressbar progress {
+	border: 1px solid shade(@highlight_color, 1.25);
+}
+
+progressbar.horizontal progress {
+	margin: 5px 0;
+	background-color: @highlight_color;
+	background-image: linear-gradient(
+		to bottom,
+		shade(@highlight_color, 1.4),
+		shade(@highlight_color, 1.1),
+		@highlight_color
+	);
+}
+
+progressbar.vertical progress {
+	background-image: linear-gradient(
+		to right,
+		shade(@highlight_color, 1.4),
+		shade(@highlight_color, 1.1),
+		@highlight_color
+	);
+}
+
+progressbar trough {
+	border: 1px solid shade(@border_color, 0.75);
+}
