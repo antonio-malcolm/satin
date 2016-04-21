@@ -4,20 +4,14 @@ headerbar {
 	padding: 4px;
 	border: none;
 	border-radius: 0;
-	background-color: @header_color;
-	background-image: linear-gradient(
-		to bottom,
-		@header_color,
-		@bg_color_dark
-	);
+	background-color: transparent;
+	color: @fg_color;
 }
 
 headerbar .title {
   padding: 0 5px;
 	font: bold;
-	color: @text_color_light;
-	text-shadow: 2px 2px 2px @bg_color_dark;
-	icon-shadow: 2px 2px 2px @bg_color_dark;
+	color: @fg_color;
 }
 
 headerbar .subtitle {

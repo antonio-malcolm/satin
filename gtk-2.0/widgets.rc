@@ -113,6 +113,10 @@ style "notebook" {
 	bg[PRELIGHT] = shade(1.125, @border_color)
 	bg[SELECTED] = shade(1.125, @border_color)
 	bg[ACTIVE] = shade(1.05, @border_color)
+	
+	fg[NORMAL] = shade(2.5, @fg_color)
+	fg[PRELIGHT] = shade(2.5, @fg_color)
+	fg[ACTIVE] = @fg_color
 
 	engine "murrine" {}
 	

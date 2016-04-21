@@ -35,10 +35,18 @@ notebook > header > tabs > tab {
 	min-width: 20px;
 	min-height: 18px;
 	border: 1px solid transparent;
+	outline-offset: -4px;
 	padding: 4px 6px 2px;
 	background-color: transparent;
-	outline-offset: -4px;
 	transition: all 150ms ease-in;
+}
+
+notebook > header > tabs > tab label {
+	color: shade(@fg_color, 2.5);
+}
+
+notebook > header > tabs > tab:checked label {
+	color: @fg_color;
 }
 
 notebook > header.top > tabs > tab {
@@ -54,7 +62,6 @@ notebook > header.bottom > tabs > tab {
 }
 
 notebook > header.bottom > tabs > tab label {
-	border-top: 2px solid transparent;
 	padding-top: 2px;
 }
 
@@ -63,7 +70,6 @@ notebook > header.left > tabs > tab {
 }
 
 notebook > header.left > tabs > tab label {
-	border-right: 2px solid transparent;
 	padding-right: 4px;
 }
 
@@ -72,7 +78,6 @@ notebook > header.right > tabs > tab {
 }
 
 notebook > header.right > tabs > tab label {
-	border-left: 2px solid transparent;
 	padding-left: 4px;
 }
 
@@ -129,32 +134,16 @@ notebook > header.top > tabs > tab:checked {
 	border-bottom: 1px solid @bg_color;
 }
 
-notebook > header.top > tabs > tab:checked label {
-	border-bottom: 2px solid @highlight_color;
-}
-
 notebook > header.bottom > tabs > tab:checked {
 	border-top: 1px solid @bg_color;
-}
-
-notebook > header.bottom > tabs > tab:checked label {
-	border-top: 2px solid @highlight_color;
 }
 
 notebook > header.left > tabs > tab:checked {
 	border-right: 1px solid @bg_color;
 }
 
-notebook > header.left > tabs > tab:checked label {
-	border-right: 2px solid @highlight_color;
-}
-
 notebook > header.right > tabs > tab:checked {
 	border-left: 1px solid @bg_color;
-}
-
-notebook > header.right > tabs > tab:checked label {
-	border-left: 2px solid @highlight_color;
 }
 
 notebook > header.top > tabs > tab + tab,
