@@ -47,88 +47,90 @@
 }
 
 .scrollbar.slider {
-	border: 1px solid shade(@bg_color_dark, 1.75);
+	border: 1px solid shade(@bg_color_dark, 1.95);
 	border-radius: 2px;
 	background-color: shade(@bg_color_dark, 2.15);
 	background-image: linear-gradient(
 		to bottom,
-		shade(@bg_color_dark, 2.65),
+		shade(@bg_color_dark, 2.25),
 		shade(@bg_color_dark, 2.15),
-		shade(@bg_color_dark, 1.75),
-		shade(@bg_color_dark, 1.45)
+		shade(@bg_color_dark, 1.95),
+		shade(@bg_color_dark, 1.85)
 	);
 }
 
 .scrollbar.slider.vertical {
 	background-image: linear-gradient(
 		to right,
-		shade(@bg_color_dark, 2.65),
+		shade(@bg_color_dark, 2.25),
 		shade(@bg_color_dark, 2.15),
-		shade(@bg_color_dark, 1.75),
-		shade(@bg_color_dark, 1.45)
+		shade(@bg_color_dark, 1.95),
+		shade(@bg_color_dark, 1.85)
 	);
 }
 
 .scrollbar.slider:hover {
+	background-color: shade(@bg_color_dark, 1.95);	
 	background-image: linear-gradient(
 		to bottom,
-		shade(@bg_color_dark, 2.35),
+		shade(@bg_color_dark, 2.15),
+		shade(@bg_color_dark, 1.95),
 		shade(@bg_color_dark, 1.85),
-		shade(@bg_color_dark, 1.65),
-		shade(@bg_color_dark, 1.35)
+		shade(@bg_color_dark, 1.75)
 	);
 }
 
 .scrollbar.slider.vertical:hover {
 	background-image: linear-gradient(
 		to right,
-		shade(@bg_color_dark, 2.35),
+		shade(@bg_color_dark, 2.15),
+		shade(@bg_color_dark, 1.95),
 		shade(@bg_color_dark, 1.85),
-		shade(@bg_color_dark, 1.65),
-		shade(@bg_color_dark, 1.35)
+		shade(@bg_color_dark, 1.75)
 	);
 }
 
 .scrollbar.slider:active {
-	border-color: shade(@highlight_color, 0.85);
-	background-color: @highlight_color;
+	border-color: @highlight_color;
+	background-color: shade(@highlight_color, 1.1);
 	background-image: linear-gradient(
 		to bottom,
-		shade(@highlight_color, 1.1),
-		shade(@highlight_color, 0.95),
-		shade(@highlight_color, 0.85),
-		shade(@highlight_color, 0.7)
+		shade(@highlight_color, 1.25),
+		shade(@highlight_color, 1.15),
+		shade(@highlight_color, 1.05),
+		shade(@highlight_color, 0.95)
 	);
 }
 
 .scrollbar.slider.vertical:active {
 	background-image: linear-gradient(
 		to right,
-		shade(@highlight_color, 1.1),
-		shade(@highlight_color, 0.95),
-		shade(@highlight_color, 0.85),
-		shade(@highlight_color, 0.7)
+		shade(@highlight_color, 1.25),
+		shade(@highlight_color, 1.15),
+		shade(@highlight_color, 1.05),
+		shade(@highlight_color, 0.95)
 	);
 }
 
 .scrollbar.slider.fine-tune:prelight:active {
-	border-color: @highlight_color;
+	border-color: shade(@highlight_color, 1.25);
+	background-color: shade(@highlight_color, 1.3);
 	background-image: linear-gradient(
 		to bottom,
-		shade(@highlight_color, 1.5),
+		shade(@highlight_color, 1.55),
+		shade(@highlight_color, 1.35),
 		shade(@highlight_color, 1.25),
-		shade(@highlight_color, 0.95),
-		shade(@highlight_color, 0.75)
+		shade(@highlight_color, 1.05)
 	);
 }
 
 .scrollbar.slider.vertical.fine-tune:prelight:active {
 	background-image: linear-gradient(
 		to right,
-		shade(@highlight_color, 1.5),
+		shade(@highlight_color, 1.55),
+		shade(@highlight_color, 1.35),
 		shade(@highlight_color, 1.25),
-		shade(@highlight_color, 0.95),
-		shade(@highlight_color, 0.75)
+		shade(@highlight_color, 1.05)
 	);
 }
 

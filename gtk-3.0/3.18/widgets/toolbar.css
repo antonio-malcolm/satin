@@ -9,8 +9,6 @@
 
 .toolbar .button {
 	padding: 2px;
-	background-color: transparent;
-	background-image: none;
 }
 
 .toolbar .button.text-button {
@@ -23,7 +21,7 @@
 
 .toolbar:insensitive {
 	background-color: @insensitive_color;
-	color: @insensitive_color;
+	color: shade(@fg_color, 1.35);
 }
 
 .toolbar.menubar {
@@ -35,19 +33,15 @@
 .primary-toolbar.toolbar {
 	-GtkWidget-window-dragging: true;
 	padding: 5px;
-	border: 0;
+	border-color: 0;
 	background-color: transparent;
-	color: @fg_color;
+	color: @highlight_text_color;
 }
 
-.primary-toolbar GtkComboBox,
-.primary-toolbar .button {
-	border: 0;
-	padding: 2px;
-	background-color: transparent;
-	color: @fg_color;
-}
-
+.primary-toolbar .raised .button,
+.primary-toolbar .raised.button,
+.toolbar GtkComboBox,
+.toolbar .button,
 .primary-toolbar GtkComboBox.flat,
 .primary-toolbar .button.flat,
 .primary-toolbar GtkComboBox.flat,
@@ -58,36 +52,31 @@
 	background-color: transparent;
 }
 
-.primary-toolbar .raised .button,
-.primary-toolbar .raised.button,
 .toolbar GtkComboBox,
-.toolbar .button {
-	border: 0;
-	background-color: transparent;
+.toolbar .button,
+.toolbar GtkComboBox.flat,
+.toolbar .button.flat {
 	color: @fg_color;
 }
 
-.primary-toolbar .button:hover,
-.toolbar .button:hover {
-	border: 1px solid shade(@border_color, 0.95);
-	background-color: transparent;
-	background-image: linear-gradient(
-		to bottom,
-		shade(mix(@bg_color, #3c3733, 0.65), 1.45),
-		@bg_color
-	);
+.primary-toolbar .button,
+.primary-toolbar .raised .button,
+.primary-toolbar .raised.button,
+.primary-toolbar GtkComboBox,
+.primary-toolbar GtkComboBox.flat,
+.primary-toolbar .button.flat,
+.primary-toolbar GtkComboBox.flat,
+.primary-toolbar .button.flat {
+	color: @highlight_text_color;
 }
 
+.primary-toolbar .button:hover,
 .primary-toolbar .button:active,
+.toolbar .button:hover,
 .toolbar .button:active {
-	border: 1px solid shade(@border_color, 0.9);
+	border: 1px solid transparent;
 	background-color: transparent;
-	background-image: linear-gradient(
-		to bottom,
-		shade(@border_color, 0.85),
-		shade(@border_color, 1.05),
-		shade(@border_color, 1.25)
-	);
+	background-image: none;
 }
 
 .primary-toolbar GtkComboBox.flat:insensitive,
@@ -105,12 +94,7 @@
 	border-color: transparent;
 	background-color: transparent;
 	background-image: none;
-	color: transparent;
-}
-
-.primary-toolbar .entry,
-.toolbar .entry {
-	border-color: shade(@border-color, 0.85);
+	color: @insensitive_color;
 }
 
 .inline-toolbar.toolbar {

@@ -1,21 +1,20 @@
 /* combobox */
 
-GtkComboBox.combobox-entry .entry {
-	padding: 4px 4px 3px;
-}
-
-.primary-toolbar GtkComboBox.combobox-entry .entry,
-GtkComboBox.combobox-entry .entry {
-  border-width: 1px 0 1px 1px;
-  border-radius: 2px 0 0 2px;
-}
-
 GtkComboBox .button {
-	padding: 4px;
+	padding: 4px 4px 2px;
+}
+
+GtkComboBox.combobox-entry .entry,
+.primary-toolbar GtkComboBox.combobox-entry .entry {
+	border-right: none;
+	border-radius: 2px 0 0 2px;
+	padding: 6px 6px 4px;
 }
 
 .primary-toolbar GtkComboBox.combobox-entry .button,
 GtkComboBox.combobox-entry .button {
+	min-width: 0;
 	border-width: 1px 1px 1px 0;
 	border-radius: 0 2px 2px 0;
+	padding: 0 8px;
 }

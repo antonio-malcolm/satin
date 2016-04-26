@@ -1,33 +1,39 @@
 /* checkboxes and radios */
 
 .check,
-.check row,
-.radio,
-.radio row {
-	border: 1px solid shade(@border_color, 0.75);
-	border-radius: 2px;
+.radio {
+	border: 1px solid shade(@border_color, 0.9);
+	padding: 1px 0 0 1px;
+	margin: 0 0 4px;
+	margin: 0 5px 5px;
+	box-shadow: inset 0 1px 2px 0 shade(@bg_color_dark, 1.5);	
 	background-color: @bg_color;
-	background-image: linear-gradient(
-		to bottom,
-		#4a4948,
-		shade(#4a4948, 1.25),
-		shade(#4a4948, 1.5),
-		shade(#4a4948, 1.75)
-	);
+	background-image: none;
+}
+
+.check {
+	border-radius: 2px;
+}
+
+.radio {
+	border-radius: 8px;
 }
 
 .check:checked,
 .radio:checked {
-	box-shadow: inset 0 1px 2px 1px shade(@bg_color_dark, 1.5);	
-	background-color: @bg_color;
-	background-image: none;
-	color: @link_color;
+	background-color: @highlight_color;
+	color: @bg_color;
 }
 
 .check:insensitive,
 .radio:insensitive {
-	border-color: shade(@insensitive_color, 0.85);
-	background-color: shade(@insensitive_color, 1.15);
+	border-color: shade(@idisabled_color, 0.85);
+	background-color: shade(@disabled_color, 1.15);
 	background-image: none;
-	color: @insensitive_color;
+	color: @disabled_color;
+}
+
+.check row,
+.radio row {
+	background-color: transparent;
 }
