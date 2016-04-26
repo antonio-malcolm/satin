@@ -4,14 +4,14 @@ headerbar {
 	padding: 4px;
 	border: none;
 	border-radius: 0;
-	background-color: transparent;
-	color: @fg_color;
+	background-color: @header_color;
+	color: @highlight_text_color;
 }
 
 headerbar .title {
   padding: 0 5px;
 	font: bold;
-	color: @fg_color;
+	color: @highlight_text_color;
 }
 
 headerbar .subtitle {

@@ -9,12 +9,8 @@ toolbar,
 }
 
 toolbar button,
-toolbar button:visited,
-.toolbar button,
-.toolbar button:visited {
+.toolbar button {
 	padding: 2px;
-	background-color: transparent;
-	background-image: none;
 }
 
 toolbar button.text-button,
@@ -86,17 +82,23 @@ toolbar button,
 .primary-toolbar button:focus,
 .primary-toolbar button:hover,
 .primary-toolbar button:active,
+.primary-toolbar button:checked,
+.primary-toolbar button:visited,
 toolbar button,
 toolbar button:focus,
 toolbar button:hover,
 toolbar button:active,
+toolbar button:checked,
+toolbar button:visited,
 .toolbar button:focus,
 .toolbar button:hover,
-.toolbar button:active {
+.toolbar button:active,
+.toolbar button:checked,
+.toolbar button:visited {
 	border: 1px solid transparent;
 	background-color: transparent;
 	background-image: none;
-	color: transparent;
+	color: @fg_color;
 }
 
 .primary-toolbar combobox.flat:disabled,
@@ -119,13 +121,7 @@ toolbar button:checked:disabled,
 	border-color: transparent;
 	background-color: transparent;
 	background-image: none;
-	color: transparent;
-}
-
-.primary-toolbar entry,
-toolbar entry,
-.toolbar entry {
-	border-color: shade(@border-color, 0.85);
+	color: @disabled_color;
 }
 
 .inline-toolbar > toolbar,

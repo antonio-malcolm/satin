@@ -2,21 +2,20 @@
 
 scrollbar,
 .scrollbar {
-	border: 1px solid @border_color;
+	border-top: 1px solid shade(@bg_color_dark, 2.0);
+	border-bottom: 1px solid shade(@bg_color_dark, 2.5);
+	border-left: 1px solid shade(@bg_color_dark, 2.0);
+	border-right: 1px solid shade(@bg_color_dark, 2.5);
 	border-radius: 0;
 	padding: 0;
 	background-color: transparent;
 }
 
 scrollbar trough,
-.scrollbar trough,
-.scrollbars-junction {
-	border: 0;
+.scrollbar trough {
+	min-width: 10px;
 	border-radius: 0;
 	background-color: shade(@bg_color_dark, 2.45);
-}
-
-scrollbar trough {
 	background-image: linear-gradient(
 		to bottom,
 		shade(@bg_color_dark, 2.0),
@@ -27,7 +26,8 @@ scrollbar trough {
 	);
 }
 
-scrollbar.vertical trough {
+scrollbar.vertical trough,
+.scrollbar.vertical trough {
 	background-image: linear-gradient(
 		to right,
 		shade(@bg_color_dark, 2.0),
@@ -42,13 +42,23 @@ scrollbar button,
 scrollbar button:active,
 scrollbar button:checked,
 scrollbar button:active:hover,
-scrollbar button:checked:hover {
+scrollbar button:checked:hover,
+.scrollbar button,
+.scrollbar button:active,
+.scrollbar button:checked,
+.scrollbar button:active:hover,
+.scrollbar button:checked:hover {
 	border-color: shade(@border_color, 1.05);
 	background-color: @highlight_color;
 	color: shade(@bg_color_dark, 1.5);
 }
 
-scrollbar slider {
+scrollbar slider,
+scrollbar .slider,
+.scrollbar slider,
+.scrollbar .slider {
+	min-width: 8px;
+	min-height: 16px;
 	border: 1px solid shade(@bg_color_dark, 1.75);
 	border-radius: 2px;
 	background-color: shade(@bg_color_dark, 2.15);
@@ -61,7 +71,10 @@ scrollbar slider {
 	);
 }
 
-scrollbar.vertical slider {
+scrollbar.vertical slider,
+scrollbar.vertical .slider,
+.scrollbar.vertical slider,
+.scrollbar.vertical .slider {
 	background-image: linear-gradient(
 		to right,
 		shade(@bg_color_dark, 2.65),
@@ -71,7 +84,10 @@ scrollbar.vertical slider {
 	);
 }
 
-scrollbar slider:hover {
+scrollbar slider:hover,
+scrollbar .slider:hover,
+.scrollbar slider:hover,
+.scrollbar .slider:hover {
 	background-image: linear-gradient(
 		to bottom,
 		shade(@bg_color_dark, 2.35),
@@ -81,7 +97,10 @@ scrollbar slider:hover {
 	);
 }
 
-scrollbar.vertical slider:hover {
+scrollbar.vertical slider:hover,
+scrollbar.vertical .slider:hover,
+.scrollbar.vertical slider:hover,
+.scrollbar.vertical .slider:hover {
 	background-image: linear-gradient(
 		to right,
 		shade(@bg_color_dark, 2.35),
@@ -91,7 +110,10 @@ scrollbar.vertical slider:hover {
 	);
 }
 
-scrollbar slider:active {
+scrollbar slider:active,
+scrollbar .slider:active,
+.scrollbar slider:active,
+.scrollbar .slider:active {
 	border-color: shade(@highlight_color, 0.85);
 	background-color: @highlight_color;
 	background-image: linear-gradient(
@@ -103,7 +125,11 @@ scrollbar slider:active {
 	);
 }
 
-scrollbar.vertical slider:active {
+scrollbar.vertical slider:active,
+scrollbar.vertical .slider:active,
+.scrollbar.vertical slider:active,
+.scrollbar.vertical .slider:active {
+	border-color: @highlight_color;
 	background-image: linear-gradient(
 		to right,
 		shade(@highlight_color, 1.1),
@@ -113,7 +139,10 @@ scrollbar.vertical slider:active {
 	);
 }
 
-scrollbar.fine-tune slider:prelight:active {
+scrollbar.fine-tune slider:hover:active,
+scrollbar.fine-tune .slider:hover:active,
+.scrollbar.fine-tune slider:hover:active,
+.scrollbar.fine-tune .slider:hover:active {
 	border-color: @highlight_color;
 	background-image: linear-gradient(
 		to bottom,
@@ -124,7 +153,10 @@ scrollbar.fine-tune slider:prelight:active {
 	);
 }
 
-scrollbar.vertical.fine-tune slider:prelight:active {
+scrollbar.vertical.fine-tune slider:hover:active,
+scrollbar.vertical.fine-tune .slider:hover:active,
+.scrollbar.vertical.fine-tune slider:hover:active,
+.scrollbar.vertical.fine-tune .slider:hover:active {
 	background-image: linear-gradient(
 		to right,
 		shade(@highlight_color, 1.5),
@@ -140,17 +172,14 @@ sc {
 	color: shade(@border_color, 0.7);
 }
 
-scrollbar.overlay-thumb:selected,
-scrollbar.overlay-indicator:selected {
+scrollbar.overlay-indicator.hovering {
 	background-color: @highlight_color;
 }
 
-scrollbar.overlay-thumb:active,
-scrollbar.overlay-indicator:active {
+scrollbar.overlay-indicator.dragging {
 	background-color: @highlight_color;
 }
 
-scrollbar.overlay-thumb:disabled,
 scrollbar.overlay-indicator:disabled {
 	background-color: shade(@disabled_color, 0.9);
 }

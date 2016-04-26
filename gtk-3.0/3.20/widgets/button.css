@@ -22,7 +22,7 @@ button {
 	margin: 0 0 5px;
 }
 
-button.flat {
+button.flat:not(:hover):not(:active):not(:checked) {
 	border-color: transparent;
 	box-shadow: none;
 	background-color: transparent;
