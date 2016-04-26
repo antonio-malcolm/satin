@@ -1,0 +1,21 @@
+/* places sidebar */
+
+placessidebar row image.sidebar-icon:dir(ltr) {
+  margin-right: 6px; 
+}
+
+placessidebar row image.sidebar-icon:dir(rtl) {
+ margin-left: 6px;
+}
+
+placessidebar row label.sidebar-label {
+	padding: 1px 0 0;
+}
+
+placessidebar row label.sidebar-label:dir(ltr) {
+ margin-right: 2px;
+}
+
+placessidebar row label.sidebar-label:dir(rtl) {
+ margin-left: 2px;
+}

@@ -25,7 +25,7 @@ cell:selected:focus {
 /* cells and rows*/
 
 cell {
-	border: none;
+	border: 0;
 	background-color: @bg_color;
 }
 
@@ -68,7 +68,6 @@ treeview.view header button:hover,
 treeview.view header button:hover:focus {
 	background-color: shade(@border_color, 0.925);
 	background-image: none;
-	color: @highlight_text_color;
 }
 
 treeview.view header:last-child button {
@@ -85,4 +84,9 @@ treeview {
 
 treeview button.dnd {
   border: 1px solid @border_color;
+}
+
+.source-list {
+  -GtkTreeView-horizontal-separator: 2px;
+  -GtkTreeView-vertical-separator: 4px; 
 }

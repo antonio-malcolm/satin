@@ -49,7 +49,7 @@
 	-GtkToolItemGroup-expander-size: 8;
 	
 	-GtkTreeView-expander-size: 8;
-	-GtkTreeView-vertical-separator: 0;
+	-GtkTreeView-vertical-separator: 3;
 	
 	-GtkWidget-link-color: @link_color;
 	-GtkWidget-visited-link-color: shade(@link_color, 1.55);
