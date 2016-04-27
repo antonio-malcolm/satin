@@ -4,7 +4,7 @@ entry {
 	min-width: 18px;
 	min-height: 16px;
 	border-radius: 2px;
-	margin: 0 0 5px;
+	margin: 2px;
 	padding: 6px 6px 4px;
 	transition: all 150ms ease-out;
 }

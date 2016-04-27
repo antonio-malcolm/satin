@@ -1,8 +1,8 @@
 /* switches */
 
 switch {
-	min-width: 52px;
-	min-height: 24px;
+	min-width: 46px;
+	min-height: 25px;
 	border-radius: 2px;
 	background-image: linear-gradient(
 		to bottom,
