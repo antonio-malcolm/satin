@@ -1,7 +1,7 @@
 /* stackswitcher */
 
-stackswitcher  checkbutton.text-button, 
-stackswitcher  radiobutton.text-button,
+stackswitcher checkbutton.text-button, 
+stackswitcher radiobutton.text-button,
 .stack-switcher checkbutton.text-button, 
 .stack-switcher radiobutton.text-button,
 .stack-switcher radio.text-button,
@@ -22,8 +22,8 @@ stackswitcher .radio.text-button {
 	);
 }
 
-stackswitcher  checkbutton.text-button:hover, 
-stackswitcher  radiobutton.text-button:hover,
+stackswitcher checkbutton.text-button:hover, 
+stackswitcher radiobutton.text-button:hover,
 .stack-switcher checkbutton.text-button:hover, 
 .stack-switcher radiobutton.text-button:hover,
 .stack-switcher radio.text-button:hover,
@@ -40,8 +40,8 @@ stackswitcher .radio.text-button:hover {
 	);
 }
 
-stackswitcher  checkbutton.text-button:checked, 
-stackswitcher  radiobutton.text-button:checked,
+stackswitcher checkbutton.text-button:checked, 
+stackswitcher radiobutton.text-button:checked,
 .stack-switcher checkbutton.text-button:checked, 
 .stack-switcher radiobutton.text-button:checked,
 .stack-switcher radio.text-button:checked,
@@ -59,16 +59,16 @@ stackswitcher .radio.text-button:checked {
 	color: @text_color_light;
 }
 
-stackswitcher  checkbutton.text-button:disabled, 
-stackswitcher  radiobutton.text-button:disabled,
+stackswitcher checkbutton.text-button:disabled, 
+stackswitcher radiobutton.text-button:disabled,
 .stack-switcher checkbutton.text-button:disabled, 
 .stack-switcher radiobutton.text-button:disabled,
 .stack-switcher radio.text-button:disabled,
 .stack-switcher .radio.text-button:disabled,
 stackswitcher radio.text-button:disabled,
 stackswitcher .radio.text-button:disabled,
-stackswitcher  checkbutton.text-button:checked:disabled, 
-stackswitcher  radiobutton.text-button:checked:disabled,
+stackswitcher checkbutton.text-button:checked:disabled, 
+stackswitcher radiobutton.text-button:checked:disabled,
 .stack-switcher checkbutton.text-button:checked:disabled, 
 .stack-switcher radiobutton.text-button:checked:disabled,
 .stack-switcher radio.text-button:checked:disabled,
