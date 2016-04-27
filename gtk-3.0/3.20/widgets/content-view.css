@@ -9,7 +9,7 @@
   background-color: @bg_color;
 }
 
-.content-view.view:prelight,
+.content-view.view:hover,
 .content-view.view:selected,
 .content-view.view:active {
   background-color: @highlight_color;
@@ -37,7 +37,7 @@ iconview.content-view.check:active {
   background-color: transparent;
 }
 
-iconview.content-view.check:prelight,
+iconview.content-view.check:hover,
 iconview.content-view.check:disabled,
 iconview.content-view.check:selected {
   background-color: transparent;

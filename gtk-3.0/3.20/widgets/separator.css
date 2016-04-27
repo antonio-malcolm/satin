@@ -105,7 +105,6 @@ headerbar button.separator:disabled,
 }
 
 .menuitem > separator {
-	-GtkMenuItem-horizontal-padding: 0;
 	border: 0;
 	color: shade(@border_color, 1.25);
 }

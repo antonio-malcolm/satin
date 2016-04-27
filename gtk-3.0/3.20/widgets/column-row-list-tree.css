@@ -32,9 +32,7 @@ cell {
 row:selected,
 row:selected:hover,
 row:selected:focus {
-	-GtkWidget-focus-padding: 1;
-	-GtkWidget-focus-line-width: 0;
-	border: none;
+	border: 0;
 }
 
 

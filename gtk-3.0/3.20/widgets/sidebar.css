@@ -8,8 +8,8 @@
 	color: @fg_color;
 }
 
-.sidebar row:prelight,
-.sidebar .view row:prelight {
+.sidebar row:hover,
+.sidebar .view row:hover {
 	border-color: shade(@border_color, 1.05);
 	background-color: shade(@border_color, 1.05);
 	color: @fg_color;
@@ -18,11 +18,11 @@
 .sidebar row:selected,
 .sidebar row:selected:hover,
 .sidebar row:selected:focus,
-.sidebar row:selected:prelight,
+.sidebar row:selected:hover,
 .sidebar .view row:selected,
 .sidebar .view row:selected:hover,
 .sidebar .view row:selected:focus,
-.sidebar .view row:selected:prelight {
+.sidebar .view row:selected:hover {
 	border-color: shade(@highlight_color, 0.9);
 	background-color: @highlight_color;
 	color: @highlight_text_color;

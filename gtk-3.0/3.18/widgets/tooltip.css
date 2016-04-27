@@ -1,7 +1,7 @@
 /* tooltips */
 
 .tooltip {
-	background-color: @bg_color_dark;
+	background-color: @menu_bg_color;
 	background-image: none;
 	color: @bg_color;
 }

@@ -32,6 +32,14 @@ radio:disabled,
 	color: @disabled_color;
 }
 
+check:disabled:checked,
+.check:disabled:checked,
+radio:disabled:checked,
+.radio:disabled:checked {
+	background-color: shade(@disabled_color, 0.85);
+	color: shade(@disabled_color, 1.15);
+}
+
 check,
 .check {
 	border-radius: 2px;

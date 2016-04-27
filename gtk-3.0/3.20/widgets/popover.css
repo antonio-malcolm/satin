@@ -1,0 +1,18 @@
+/* popover */
+
+popover,
+popover.background {
+	background-color: @menu_bg_color;
+}
+
+popover > stack,
+popover > .list,
+popover > .view,
+popover.background > stack,
+popover.background > .list,
+popover.background > .view {
+	border: 0;
+	background-color: transparent;
+	background-image: none;
+	color: @text_color_light;
+}

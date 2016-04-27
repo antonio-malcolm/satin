@@ -14,7 +14,7 @@
 	font: bold;
 	color: @text_color_light;
 	text-shadow: 2px 2px 2px @bg_color_dark;
-	icon-shadow: 2px 2px 2px @bg_color_dark;
+	-gtk-icon-shadow: 2px 2px 2px @bg_color_dark;
 }
 
 .titlebar.default-decoration {

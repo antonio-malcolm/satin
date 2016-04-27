@@ -1,6 +1,8 @@
 /* combobox */
 
 combobox button {
+	min-width: 18px;
+	min-height: 18px;	
 	padding: 4px 4px 2px;
 }
 

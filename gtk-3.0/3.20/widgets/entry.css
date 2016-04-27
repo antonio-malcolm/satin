@@ -1,19 +1,21 @@
 /* entry */
 
-entry,
-entry:prelight {
-	padding: 6px 6px 4px;
-	border: 1px solid shade(@border_color, 0.85);
+entry {
+	min-width: 18px;
+	min-height: 16px;
 	border-radius: 2px;
-	background-color: @unfocused_color;
+	margin: 0 0 5px;
+	padding: 6px 6px 4px;
+	transition: all 150ms ease-out;
+}
+
+entry,
+entry:hover {
+	border: 1px solid shade(@border_color, 0.85);
+	background: @bg_color;
 	background-image: none;
 	box-shadow: inset 0 0 2px 1px shade(@border_color, 1.1);
 	color: @text_color;
-	transition: all 175ms ease-out;
-}
-
-entry {
-	margin: 0 0 5px;
 }
 
 entry:active,
@@ -22,7 +24,6 @@ entry:focus,
 entry:hover,
 entry:selected,
 entry:selected:focus {
-	background: @bg_color;
 	box-shadow: inset 0 0 2px 2px shade(@border_color, 1.15);
 }
 

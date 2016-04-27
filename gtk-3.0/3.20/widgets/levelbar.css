@@ -1,37 +1,20 @@
 /* level bars */
 
-levelbar {
-	margin: 0 0 5px;
-}
-
 levelbar trough {
 	border: 1px solid shade(@border_color, 0.75);
 	border-radius: 2px;
-	margin: 0 0 4px;
+	margin: 0 0 3px;
 }
 
 levelbar block {
-	min-width: 34;
-	min-height: 3;
-	border: 1px solid @highlight_color;
+	min-width: 32px;
+	min-height: 4px;
 	border-radius: 2px;
-	padding: 2px;
-	background-color: @highlight_color;
-	background-image: linear-gradient(
-		to bottom,
-		shade(@highlight_color, 1.4),
-		shade(@highlight_color, 1.1),
-		@highlight_color
-	);
 }
 
 levelbar.vertical block {
-	min-width: 34;
-	min-height: 3;
-}
-
-levelbar.continuous block {
-	padding: 2px;
+	min-width: 4px;
+	min-height: 32px;
 }
 
 levelbar.discrete.horizontal block {
@@ -67,4 +50,8 @@ levelbar block.empty {
 	border-color: transparent;
 	background-color: transparent;
 	background-image: none;
+}
+
+levelbar.discrete block.empty {
+	background-color: shade(@border_color, 0.35);
 }

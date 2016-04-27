@@ -1,13 +1,6 @@
 * {
 	-GtkArrow-arrow-scaling: 1.0;
 	
-	-GtkButton-child-displacement-x: 0;
-	-GtkButton-child-displacement-y: 0;
-	-GtkButton-default-border: 0;
-	-GtkButton-image-spacing: 0;
-	-GtkButton-inner-border: 1;
-	-GtkButton-interior-focus: true;
-	
 	-GtkButtonBox-child-min-height: 18;
 	-GtkButtonBox-child-internal-pad-x: 2;
 	-GtkButtonBox-child-internal-pad-y: 2;
@@ -20,28 +13,13 @@
 	-GtkHTML-link-color: @link_color;
 	-GtkIMHtml-hyperlink-color: @link_color;
 	
-	-GtkMenu-horizontal-padding: 0;
-	-GtkMenu-vertical-padding: 0;
-	
-	-GtkPaned-handle-size: 3;
-	
 	-GtkProgressBar-min-horizontal-bar-height: 16;
 	-GtkProgressBar-min-vertical-bar-width: 16;
 	
-	-GtkRange-slider-width: 12;
-	-GtkRange-stepper-size: 12;
-	-GtkRange-stepper-spacing: 0;
-	-GtkRange-trough-border: 0;
-	-GtkRange-trough-under-steppers: 1;
-	
 	-GtkScrollbar-has-backward-stepper: false;
 	-GtkScrollbar-has-forward-stepper: false;
-	-GtkScrollbar-min-slider-length: 60;
-	-GtkScrollbar-slider-width: 8;
-	-GtkScrollbar-trough-border: 0;
 	
 	-GtkScrolledWindow-scrollbar-spacing: 1;
-	-GtkScrolledWindow-scrollbars-within-bevel: 1;
 	
 	-GtkTextView-error-underline-color: @error_color;
 	
@@ -50,18 +28,9 @@
 	
 	-GtkTreeView-expander-size: 8;
 	-GtkTreeView-vertical-separator: 3;
-	
-	-GtkWidget-link-color: @link_color;
-	-GtkWidget-visited-link-color: shade(@link_color, 1.55);
-	
-	-GtkWidget-wide-separators: true;
+
 	-GtkWidget-horizontal-separator: 1;
 	-GtkWidget-vertical-separator: 1;
-	-GtkWidget-separator-width: 1;
-	-GtkWidget-separator-height: 0;
-	
-	-GtkWidget-focus-line-width: 1;
-  -GtkWidget-focus-padding: 0;
 	
 	-GtkWindow-resize-grip-width: 0;
 	-GtkWindow-resize-grip-height: 0;
@@ -86,7 +55,7 @@
 
 .background:backdrop {
 	text-shadow: none;
-	icon-shadow: none;
+	-gtk-icon-shadow: none;
 }
 
 *:selected,
@@ -97,12 +66,12 @@
 
 *:disabled,
 *:disabled:disabled {
-	-gtk-image-effect: dim;
-	color: shade(disabled_color, 0.75);
+	-gtk-icon-effect: dim;
+	color: shade(@disabled_color, 0.75);
 }
 
 *:hover {
-  -gtk-image-effect: highlight;
+  -gtk-icon-effect: highlight;
 }
 
 *:link, 
@@ -123,7 +92,7 @@
 	color: @fg_color;
 }
 
-.gtkstyle-fallback:prelight {
+.gtkstyle-fallback:hover {
 	background-color: shade(@bg_color, 1.1);
 	color: @fg_color;
 }

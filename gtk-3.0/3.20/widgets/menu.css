@@ -9,6 +9,7 @@ headerbar menu {
    * else it will appear too light, in comparison to the corresponding active menubar item...
    */	
 	background-color: shade(@menu_bg_color, 0.45);
+	background-image: none;
 
 }
 
@@ -112,7 +113,6 @@ menuitem,
 .menuitem,
 menu menuitem,
 .menu menuitem {
-	-GtkMenuItem-arrow-scaling: 0.5;
 	padding: 3px;
 	border: 1px solid transparent;
 	border-radius: 0;
@@ -181,8 +181,8 @@ menuitem radio:disabled,
 	background-color: @disabled_color;
 }
 
-menuitem calendar:inconsistent,
-.menuitem calendar:inconsistent {
+menuitem calendar:indeterminate,
+.menuitem calendar:indeterminate {
 	color: mix(@text_color_light, @menu_bg_color, 0.5);
 }
 

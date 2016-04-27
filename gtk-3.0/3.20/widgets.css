@@ -19,6 +19,7 @@
 @import url('widgets/notebook.css');
 @import url('widgets/toolbar.css');
 @import url('widgets/notification.css');
+@import url('widgets/popover.css');
 @import url('widgets/tooltip.css');
 @import url('widgets/content-view.css');
 @import url('widgets/color-chooser.css');
@@ -43,8 +44,8 @@ iconview:selected,
 iconview:selected:focus,
 textview:selected,
 textview:selected:focus {
-	border: 1px solid @highlight_color, 1.25;
-	background-color: 1px solid @highlight_color, 1.25;
+	border: 1px solid shade(@highlight_color, 1.25);
+	background-color: shade(@highlight_color, 1.25);
 	color: @highlight_text_color;
 }
 
