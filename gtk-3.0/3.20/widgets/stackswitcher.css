@@ -1,5 +1,13 @@
 /* stackswitcher */
 
+stackswitcher checkbutton, 
+stackswitcher radiobutton,
+.stack-switcher checkbutton, 
+.stack-switcher radiobutton,
+.stack-switcher radio,
+.stack-switcher .radio,
+stackswitcher radio,
+stackswitcher .radio,
 stackswitcher checkbutton.text-button, 
 stackswitcher radiobutton.text-button,
 .stack-switcher checkbutton.text-button, 
@@ -22,6 +30,14 @@ stackswitcher .radio.text-button {
 	);
 }
 
+stackswitcher checkbutton:hover, 
+stackswitcher radiobutton:hover,
+.stack-switcher checkbutton:hover, 
+.stack-switcher radiobutton:hover,
+.stack-switcher radio:hover,
+.stack-switcher .radio:hover,
+stackswitcher radio:hover,
+stackswitcher .radio:hover,
 stackswitcher checkbutton.text-button:hover, 
 stackswitcher radiobutton.text-button:hover,
 .stack-switcher checkbutton.text-button:hover, 
@@ -40,6 +56,14 @@ stackswitcher .radio.text-button:hover {
 	);
 }
 
+stackswitcher checkbutton:checked, 
+stackswitcher radiobutton:checked,
+.stack-switcher checkbutton:checked, 
+.stack-switcher radiobutton:checked,
+.stack-switcher radio:checked,
+.stack-switcher .radio:checked,
+stackswitcher radio:checked,
+stackswitcher .radio:checked,
 stackswitcher checkbutton.text-button:checked, 
 stackswitcher radiobutton.text-button:checked,
 .stack-switcher checkbutton.text-button:checked, 
@@ -59,6 +83,22 @@ stackswitcher .radio.text-button:checked {
 	color: @text_color_light;
 }
 
+stackswitcher checkbutton:disabled, 
+stackswitcher radiobutton:disabled,
+.stack-switcher checkbutton:disabled, 
+.stack-switcher radiobutton:disabled,
+.stack-switcher radio:disabled,
+.stack-switcher .radio:disabled,
+stackswitcher radio:disabled,
+stackswitcher .radio:disabled,
+stackswitcher checkbutton:checked:disabled, 
+stackswitcher radiobutton:checked:disabled,
+.stack-switcher checkbutton:checked:disabled, 
+.stack-switcher radiobutton:checked:disabled,
+.stack-switcher radio:checked:disabled,
+.stack-switcher .radio:checked:disabled,
+stackswitcher radio:checked:disabled,
+stackswitcher .radio:checked:disabled,
 stackswitcher checkbutton.text-button:disabled, 
 stackswitcher radiobutton.text-button:disabled,
 .stack-switcher checkbutton.text-button:disabled, 
