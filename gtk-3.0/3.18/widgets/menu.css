@@ -99,30 +99,89 @@ GtkTreeMenu .menuitem {
 
 .menu .menuitem:insensitive,
 .menu .menuitem *:insensitive {
-	color: @bg_color_dark;
+	color: shade(@insensitive_color, 0.75);
 }
 
-.menuitem.check,
-.menuitem.radio,
-.menuitem.check:hover,
-.menuitem.radio:hover {
-	border-style: none;
-	background-color: transparent;
+.menuitem .button,
+.menuitem .button.toggle-button,
+.menuitem .button.toggle-button:hover,
+.menuitem:hover button.toggle-button {
+	background-color: shade(@border_color, 1.5);
+	background-image: linear-gradient(
+		to bottom,
+		shade(@border_color, 1.2),
+		shade(@border_color, 1.1),
+		shade(@border_color, 0.95)
+	);
+	color: @text_color;
 }
 
-.menuitem.check:active,
-.menuitem.radio:active {
-	border-style: none;
-	background-color: transparent;
+.menuitem .button:hover {
+	background-color: shade(@border_color, 1.3);
+	background-image: linear-gradient(
+		to bottom,
+		shade(@border_color, 1.2),
+		@border_color,
+		shade(@border_color, 0.95)
+	);
 }
 
-.menu.button:active:insensitive,
-.menu.button:checked:insensitive,
-.menu.button:insensitive,
-.menuitem.check:insensitive,
-.menuitem.radio:insensitive {
-	border: 1px solid @insensitive_color;
-	background-color: @insensitive_color;
+.menuitem .button:active,
+.menuitem .button:checked {
+	background-color: shade(@border_color, 0.85);
+	background-image: linear-gradient(
+		to bottom,
+		shade(@border_color, 0.6),
+		shade(@border_color, 0.775),
+		shade(@border_color, 0.85)
+	);
+	color: @text_color_light;
+}
+
+.menuitem .check:checked,
+.menuitem .radio:checked,
+.menuitem .check:checked:hover,
+.menuitem .radio:checked:hover {
+	background-color: @highlight_color;
+	color: @bg_color;
+}
+
+.menuitem:hover .check:checked,
+.menuitem:hover .radio:checked {
+	border: 1px solid shade(@menu_bg_color, 2.5);
+	box-shadow: inset 0 1px 2px 0 shade(@menu_bg_color, 0.5);
+	background-color: shade(@highlight_color, 1.25);
+	color: @bg_color;
+}
+
+.menuitem .check:disabled,
+.menuitem .radio:disabled,
+.menuitem .check:disabled:hover,
+.menuitem .radio:disabled:hover,
+.menuitem:hover .check:disabled,
+.menuitem:hover .radio:disabled {
+	border-color: shade(@idisabled_color, 0.85);
+	background-color: shade(@insensitive_color, 1.15);
+	background-image: none;
+	color: @insensitive_color;
+}
+
+.menuitem .check:disabled:checked,
+.menuitem .radio:disabled:checked,
+.menuitem .check:disabled:checked:hover,
+.menuitem .radio:disabled:checked:hover,
+.menuitem:hover .check:disabled:checked,
+.menuitem:hover .radio:disabled:checked {
+	background-color: shade(@insensitive_color, 0.85);
+	color: shade(@insensitive_color, 1.15);
+}
+
+.menuitem:hover .check {
+	border-radius: 2px;
+}
+
+.menuitem:hover .radio {
+	border-radius: 10px;
 }
 
 .menuitem GtkCalendar:inconsistent {

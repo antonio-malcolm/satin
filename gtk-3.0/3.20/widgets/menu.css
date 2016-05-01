@@ -264,7 +264,6 @@ menuitem:hover .radio {
 	border-radius: 10px;
 }
 
-
 menuitem accelerator,
 .menuitem accelerator {
 	color: alpha(@text_color_light, 0.6);

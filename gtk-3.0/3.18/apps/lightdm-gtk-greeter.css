@@ -1,5 +1,9 @@
 /* lightdm */
 
+.frame {
+	border: 1px solid transparent;
+}
+
 #panel_window {
 	background-color: transparent;
 	background-image: none;
@@ -9,6 +13,7 @@
 #panel_window .menubar > .menuitem {
 	padding: 2px;
 	background-color: transparent;
+	background-image: none;
 	color: @label_color;
 }
 
@@ -21,7 +26,6 @@
 	background: #000000;
 	padding: 20px;
 }
-
 
 #login_window,
 #shutdown_dialog,
@@ -44,7 +48,7 @@
 		@header_color,
 		shade(@bg_color_dark, 0.75)
 	);
-	box-shadow: 0 1px 3px 1px shade(@bg_color_dark, 0.275);
+	box-shadow: 0 1px 4px 2px shade(@bg_color_dark, 0.5);
 	color: @highlight_text_color;
 	font-weight: bold;
 }
