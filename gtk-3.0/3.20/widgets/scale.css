@@ -58,6 +58,7 @@ scale highlight {
 	background-color: @highlight_color;
 }
 
+scale.horizontal highlight,
 scale highlight.left,
 scale highlight.right {
 	background-image: linear-gradient(
@@ -69,10 +70,11 @@ scale highlight.right {
 	);
 }
 
+scale.vertical highlight,
 scale highlight.top,
-scale highlight.bottom {
+scale highlight.bottmo {
 	background-image: linear-gradient(
-		to bottom,
+		to right,
 		shade(@highlight_color, 1.4),
 		shade(@highlight_color, 1.25),
 		shade(@highlight_color, 1.1),
@@ -85,6 +87,16 @@ scale highlight.left:disabled {
 	border-color: @disabled_color;
 	background-color: shade(@disabled_color, 1.08);
 	background-image: none;
+}
+
+scale.horizontal trough {
+	background-image: linear-gradient(
+		to bottom,
+		@bg_color_dark,
+		shade(@bg_color_dark, 1.25),
+		shade(@bg_color_dark, 1.5),
+		shade(@bg_color_dark, 1.75)
+	);
 }
 
 scale.fine-tune slider {

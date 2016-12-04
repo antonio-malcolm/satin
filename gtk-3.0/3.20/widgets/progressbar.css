@@ -35,3 +35,13 @@ progressbar.vertical progress {
 progressbar trough {
 	border: 1px solid shade(@border_color, 0.75);
 }
+
+progressbar.horizontal trough {
+	background-image: linear-gradient(
+		to bottom,
+		@bg_color_dark,
+		shade(@bg_color_dark, 1.25),
+		shade(@bg_color_dark, 1.5),
+		shade(@bg_color_dark, 1.75)
+	);
+}

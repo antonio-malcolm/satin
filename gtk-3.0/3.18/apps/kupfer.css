@@ -1,0 +1,35 @@
+/* kupfer */
+
+#kupfer,
+#kupfer-list-view {
+	color: @text_color_light;
+}
+
+#kupfer {
+	background: @bg_color_dark;
+}
+
+#kupfer-object-pane  *,
+#kupfer-action-pane  *,
+#kupfer-indirect-object-pane *,
+#kupfer-list-view,
+#kupfer-list-view * {
+	border: 0;
+}
+
+#kupfer-object-pane > *,
+#kupfer-action-pane > *,
+#kupfer-indirect-object-pane > *,
+#kupfer-list-view > * {
+	padding: 2px;
+}
+
+#kupfer-object-pane > *,
+#kupfer-list-view {
+	background: @menu_bg_color;
+}
+
+#kupfer-list-view *:selected {
+	background: @highlight_color;
+	color: @highlight_text_color;
+}

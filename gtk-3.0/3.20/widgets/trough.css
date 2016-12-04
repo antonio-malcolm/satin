@@ -1,6 +1,9 @@
 /* trough */
 
-trough {
+trough,
+.horizontal trough,
+trough.left,
+trough.right {
 	border-radius: 2px;
 	background-color: shade(@bg_color_dark, 1.5);
 	background-image: linear-gradient(
@@ -12,18 +15,7 @@ trough {
 	);
 }
 
-
-trough.left,
-trough.right {
-	background-image: linear-gradient(
-		to bottom,
-		@bg_color_dark,
-		shade(@bg_color_dark, 1.25),
-		shade(@bg_color_dark, 1.5),
-		shade(@bg_color_dark, 1.75)
-	);
-}
-
+.vertical trough,
 trough.top,
 trough.bottom {
 	background-image: linear-gradient(
